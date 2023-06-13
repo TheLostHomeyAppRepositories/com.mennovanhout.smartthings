@@ -1,7 +1,7 @@
 import Homey from 'homey';
 import axios from 'axios';
 
-class MyDevice extends Homey.Device {
+class Device extends Homey.Device {
 
   updateInformation() {
     const token = this.homey.settings.get('token');
@@ -13,6 +13,7 @@ class MyDevice extends Homey.Device {
       },
     }).then((response) => {
       this.setCapabilityValue('washer_job_state', response.data.components.main.washerOperatingState.washerJobState.value).catch(this.error);
+      this.setCapabilityValue('washer_job_state', 'spin').catch(this.error);
       this.setCapabilityValue('washer_machine_state', response.data.components.main.washerOperatingState.machineState.value).catch(this.error);
     });
   }
@@ -21,13 +22,25 @@ class MyDevice extends Homey.Device {
    * onInit is called when the device is initialized.
    */
   async onInit() {
-    await this.registerCapabilityListener('washer_job_state', async (value: any) => {
-      const jobStateBecameTrigger = this.homey.flow.getTriggerCard('washer_job_state_became');
+    const device = this;
 
-      await jobStateBecameTrigger.trigger({
-        washer_job_state: value,
-      });
+    this.registerCapabilityListener('washer_job_state', async (value, opts) => {
+      this.log('value', value);
+      this.log('opts', opts);
     });
+
+    // this.registerCapabilityListener('washer_job_state', async (value: any, opts: any) => {
+    //   this.log(value);
+    //   device.log(value);
+    //   device.log('TEST!');
+    //   this.log(opts);
+    //   device.log(opts);
+    //
+    //   // @ts-ignore
+    //   this.driver.triggerDeviceJobStateBecameFlow(device, {
+    //     washer_job_state: value,
+    //   }, {});
+    // });
 
     this.updateInformation();
 
@@ -79,4 +92,4 @@ class MyDevice extends Homey.Device {
 
 }
 
-module.exports = MyDevice;
+module.exports = Device;

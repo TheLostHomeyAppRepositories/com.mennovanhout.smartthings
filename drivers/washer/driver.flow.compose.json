@@ -1,0 +1,150 @@
+{
+  "triggers": [
+    {
+      "id": "washer_job_state_changed",
+      "title": {
+        "en": "The job stated changed"
+      },
+      "tokens": [
+        {
+          "type": "string",
+          "name": "washer_job_state",
+          "title": {
+            "en": "Washer Job State"
+          },
+          "example": {
+            "en": "The current washer job state"
+          }
+        }
+      ]
+    },
+    {
+      "id": "washer_job_state_became",
+      "title": {
+        "en": "The job state became..."
+      },
+      "titleFormatted": {
+        "en": "The job state became [[state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "state",
+          "title": {
+            "en": "State"
+          },
+          "values": [
+            {
+              "id": "airWash",
+              "label": {
+                "en": "Air Wash"
+              }
+            },
+            {
+              "id": "aIRinse",
+              "label": {
+                "en": "AI Rinse"
+              }
+            },
+            {
+              "id": "aISpin",
+              "label": {
+                "en": "AI Spin"
+              }
+            },
+            {
+              "id": "aIWash",
+              "label": {
+                "en": "AI Wash"
+              }
+            },
+            {
+              "id": "cooling",
+              "label": {
+                "en": "Cooling"
+              }
+            },
+            {
+              "id": "delayWash",
+              "label": {
+                "en": "Delay Wash"
+              }
+            },
+            {
+              "id": "drying",
+              "label": {
+                "en": "Drying"
+              }
+            },
+            {
+              "id": "finish",
+              "label": {
+                "en": "Finish"
+              }
+            },
+            {
+              "id": "none",
+              "label": {
+                "en": "None"
+              }
+            },
+            {
+              "id": "preWash",
+              "label": {
+                "en": "Pre Wash"
+              }
+            },
+            {
+              "id": "rinse",
+              "label": {
+                "en": "Rinse"
+              }
+            },
+            {
+              "id": "spin",
+              "label": {
+                "en": "Spin"
+              }
+            },
+            {
+              "id": "wash",
+              "label": {
+                "en": "Wash"
+              }
+            },
+            {
+              "id": "weightSensing",
+              "label": {
+                "en": "Weight Sensing"
+              }
+            },
+            {
+              "id": "wrinklePrevent",
+              "label": {
+                "en": "Wrinkle Prevent"
+              }
+            },
+            {
+              "id": "freezeProtection",
+              "label": {
+                "en": "Freeze Protection"
+              }
+            }
+          ]
+        }
+      ],
+      "tokens": [
+        {
+          "type": "string",
+          "name": "washer_job_state",
+          "title": {
+            "en": "Washer Job State"
+          },
+          "example": {
+            "en": "The current washer job state"
+          }
+        }
+      ]
+    }
+  ]
+}

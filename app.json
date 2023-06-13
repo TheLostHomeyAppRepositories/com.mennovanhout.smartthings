@@ -28,9 +28,47 @@
   },
   "brandColor": "#13bffe",
   "support": "mailto:info@mennovanhout.nl",
+  "source": "https://github.com/mennovanhout/homey-smartthings",
+  "homepage": "https://mennovanhout.nl",
+  "bugs": {
+    "url": "https://github.com/mennovanhout/homey-smartthings/issues"
+  },
+  "contributing": {
+    "donate": {
+      "bunq": {
+        "username": "mennovanhout"
+      }
+    }
+  },
   "flow": {
     "triggers": [
       {
+        "id": "washer_job_state_changed",
+        "title": {
+          "en": "The job stated changed"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "washer_job_state",
+            "title": {
+              "en": "Washer Job State"
+            },
+            "example": {
+              "en": "The current washer job state"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          }
+        ]
+      },
+      {
+        "id": "washer_job_state_became",
         "title": {
           "en": "The job state became..."
         },
@@ -38,6 +76,11 @@
           "en": "The job state became [[state]]"
         },
         "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          },
           {
             "type": "dropdown",
             "name": "state",
@@ -147,34 +190,15 @@
         "tokens": [
           {
             "type": "string",
-            "name": "job-state",
+            "name": "washer_job_state",
             "title": {
-              "en": "Job state"
+              "en": "Washer Job State"
             },
             "example": {
-              "en": "The current job state"
+              "en": "The current washer job state"
             }
           }
-        ],
-        "id": "washer_job_state_became"
-      },
-      {
-        "title": {
-          "en": "The job stated changed"
-        },
-        "tokens": [
-          {
-            "type": "string",
-            "name": "job-state",
-            "title": {
-              "en": "Job state"
-            },
-            "example": {
-              "en": "The current job state"
-            }
-          }
-        ],
-        "id": "washer_job_state_changed"
+        ]
       }
     ]
   },
@@ -223,7 +247,7 @@
         "en": "Job State"
       },
       "getable": true,
-      "setable": false,
+      "setable": true,
       "uiComponent": "sensor",
       "icon": "/assets/icons/washer_job_state.svg",
       "values": [

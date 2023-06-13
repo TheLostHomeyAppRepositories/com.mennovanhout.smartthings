@@ -3,8 +3,10 @@ import axios from 'axios';
 
 class MyDriver extends Homey.Driver {
 
+  _deviceJobStateBecame: any;
+
   async onInit() {
-    this.log('MyDriver has been initialized');
+    this._deviceJobStateBecame = this.homey.flow.getDeviceTriggerCard('washer_job_state_became');
   }
 
   async onPairListDevices() {
@@ -24,6 +26,12 @@ class MyDriver extends Homey.Driver {
         },
       };
     });
+  }
+
+  triggerDeviceJobStateBecameFlow(device: any, tokens: any, state: any) {
+    this._deviceJobStateBecame.trigger(device, tokens, state)
+      .then(this.log)
+      .catch(this.error);
   }
 
 }
