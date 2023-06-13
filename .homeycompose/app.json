@@ -26,5 +26,17 @@
     "email": "menno.vanhout@gmail.com"
   },
   "brandColor": "#13bffe",
-  "support": "mailto:info@mennovanhout.nl"
+  "support": "mailto:info@mennovanhout.nl",
+  "source": "https://github.com/mennovanhout/homey-smartthings",
+  "homepage": "https://mennovanhout.nl",
+  "bugs": {
+    "url": "https://github.com/mennovanhout/homey-smartthings/issues"
+  },
+  "contributing": {
+    "donate": {
+      "bunq": {
+        "username": "mennovanhout"
+      }
+    }
+  }
 }
