@@ -1,0 +1,359 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.mennovanhout.smartthings",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "SmartThings"
+  },
+  "description": {
+    "en": "Add support for SmartThings devices"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Menno van Hout",
+    "email": "menno.vanhout@gmail.com"
+  },
+  "brandColor": "#13bffe",
+  "support": "mailto:info@mennovanhout.nl",
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "The job state became..."
+        },
+        "titleFormatted": {
+          "en": "The job state became [[state]]"
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "state",
+            "title": {
+              "en": "State"
+            },
+            "values": [
+              {
+                "id": "airWash",
+                "label": {
+                  "en": "Air Wash"
+                }
+              },
+              {
+                "id": "aIRinse",
+                "label": {
+                  "en": "AI Rinse"
+                }
+              },
+              {
+                "id": "aISpin",
+                "label": {
+                  "en": "AI Spin"
+                }
+              },
+              {
+                "id": "aIWash",
+                "label": {
+                  "en": "AI Wash"
+                }
+              },
+              {
+                "id": "cooling",
+                "label": {
+                  "en": "Cooling"
+                }
+              },
+              {
+                "id": "delayWash",
+                "label": {
+                  "en": "Delay Wash"
+                }
+              },
+              {
+                "id": "drying",
+                "label": {
+                  "en": "Drying"
+                }
+              },
+              {
+                "id": "finish",
+                "label": {
+                  "en": "Finish"
+                }
+              },
+              {
+                "id": "none",
+                "label": {
+                  "en": "None"
+                }
+              },
+              {
+                "id": "preWash",
+                "label": {
+                  "en": "Pre Wash"
+                }
+              },
+              {
+                "id": "rinse",
+                "label": {
+                  "en": "Rinse"
+                }
+              },
+              {
+                "id": "spin",
+                "label": {
+                  "en": "Spin"
+                }
+              },
+              {
+                "id": "wash",
+                "label": {
+                  "en": "Wash"
+                }
+              },
+              {
+                "id": "weightSensing",
+                "label": {
+                  "en": "Weight Sensing"
+                }
+              },
+              {
+                "id": "wrinklePrevent",
+                "label": {
+                  "en": "Wrinkle Prevent"
+                }
+              },
+              {
+                "id": "freezeProtection",
+                "label": {
+                  "en": "Freeze Protection"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "job-state",
+            "title": {
+              "en": "Job state"
+            },
+            "example": {
+              "en": "The current job state"
+            }
+          }
+        ],
+        "id": "washer_job_state_became"
+      },
+      {
+        "title": {
+          "en": "The job stated changed"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "job-state",
+            "title": {
+              "en": "Job state"
+            },
+            "example": {
+              "en": "The current job state"
+            }
+          }
+        ],
+        "id": "washer_job_state_changed"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Washer"
+      },
+      "class": "other",
+      "icon": "/drivers/washer/assets/icon.svg",
+      "capabilities": [
+        "washer_job_state",
+        "washer_machine_state"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/washer/assets/images/small.png",
+        "large": "/drivers/washer/assets/images/large.png",
+        "xlarge": "/drivers/washer/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "washer"
+    }
+  ],
+  "capabilities": {
+    "washer_job_state": {
+      "type": "enum",
+      "title": {
+        "en": "Job State"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/icons/washer_job_state.svg",
+      "values": [
+        {
+          "id": "airWash",
+          "title": {
+            "en": "Air Wash"
+          }
+        },
+        {
+          "id": "aIRinse",
+          "title": {
+            "en": "AI Rinse"
+          }
+        },
+        {
+          "id": "aISpin",
+          "title": {
+            "en": "AI Spin"
+          }
+        },
+        {
+          "id": "aIWash",
+          "title": {
+            "en": "AI Wash"
+          }
+        },
+        {
+          "id": "cooling",
+          "title": {
+            "en": "Cooling"
+          }
+        },
+        {
+          "id": "delayWash",
+          "title": {
+            "en": "Delay Wash"
+          }
+        },
+        {
+          "id": "drying",
+          "title": {
+            "en": "Drying"
+          }
+        },
+        {
+          "id": "finish",
+          "title": {
+            "en": "Finish"
+          }
+        },
+        {
+          "id": "none",
+          "title": {
+            "en": "None"
+          }
+        },
+        {
+          "id": "preWash",
+          "title": {
+            "en": "Pre Wash"
+          }
+        },
+        {
+          "id": "rinse",
+          "title": {
+            "en": "Rinse"
+          }
+        },
+        {
+          "id": "spin",
+          "title": {
+            "en": "Spin"
+          }
+        },
+        {
+          "id": "wash",
+          "title": {
+            "en": "Wash"
+          }
+        },
+        {
+          "id": "weightSensing",
+          "title": {
+            "en": "Weight Sensing"
+          }
+        },
+        {
+          "id": "wrinklePrevent",
+          "title": {
+            "en": "Wrinkle Prevent"
+          }
+        },
+        {
+          "id": "freezeProtection",
+          "title": {
+            "en": "Freeze Protection"
+          }
+        }
+      ]
+    },
+    "washer_machine_state": {
+      "type": "enum",
+      "title": {
+        "en": "Machine State"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/icons/washer_machine_state.svg",
+      "values": [
+        {
+          "id": "pause",
+          "title": {
+            "en": "Paused"
+          }
+        },
+        {
+          "id": "run",
+          "title": {
+            "en": "Running"
+          }
+        },
+        {
+          "id": "stop",
+          "title": {
+            "en": "Stopped"
+          }
+        }
+      ]
+    }
+  }
+}

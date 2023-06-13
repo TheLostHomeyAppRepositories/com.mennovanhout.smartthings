@@ -1,0 +1,26 @@
+{
+  "type": "enum",
+  "title": {"en":  "Job State"},
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/icons/washer_job_state.svg",
+  "values": [
+    { "id": "airWash", "title": { "en": "Air Wash" }},
+    { "id": "aIRinse", "title": { "en": "AI Rinse" }},
+    { "id": "aISpin", "title": { "en": "AI Spin" }},
+    { "id": "aIWash", "title": { "en": "AI Wash" }},
+    { "id": "cooling", "title": { "en": "Cooling" }},
+    { "id": "delayWash", "title": { "en": "Delay Wash" }},
+    { "id": "drying", "title": { "en": "Drying" }},
+    { "id": "finish", "title": { "en": "Finish" }},
+    { "id": "none", "title": { "en": "None" }},
+    { "id": "preWash", "title": { "en": "Pre Wash" }},
+    { "id": "rinse", "title": { "en": "Rinse" }},
+    { "id": "spin", "title": { "en": "Spin" }},
+    { "id": "wash", "title": { "en": "Wash" }},
+    { "id": "weightSensing", "title": { "en": "Weight Sensing" }},
+    { "id": "wrinklePrevent", "title": { "en": "Wrinkle Prevent" }},
+    { "id": "freezeProtection", "title": { "en": "Freeze Protection" }}
+  ]
+}
