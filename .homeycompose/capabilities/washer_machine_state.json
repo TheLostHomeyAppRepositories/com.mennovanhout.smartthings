@@ -1,6 +1,6 @@
 {
   "type": "enum",
-  "title": {"en":  "Machine State"},
+  "title": {"en":  "Machine"},
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",

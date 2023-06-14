@@ -3,17 +3,145 @@
     {
       "id": "washer_job_state_changed",
       "title": {
-        "en": "The job stated changed"
+        "en": "When the job changed"
       },
       "tokens": [
         {
           "type": "string",
           "name": "washer_job_state",
           "title": {
-            "en": "Washer Job State"
+            "en": "Job"
           },
           "example": {
-            "en": "The current washer job state"
+            "en": "finish"
+          }
+        }
+      ]
+    },
+    {
+      "id": "when-the-washer-job-became",
+      "title": {
+        "en": "When the job became..."
+      },
+      "titleFormatted": {
+        "en": "When the job became [[washer_job_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "washer_job_state",
+          "title": {
+            "en": "Pick a job"
+          },
+          "values": [
+            {
+              "id": "airWash",
+              "label": {
+                "en": "Air Wash"
+              }
+            },
+            {
+              "id": "aIRinse",
+              "label": {
+                "en": "AI Rinse"
+              }
+            },
+            {
+              "id": "aISpin",
+              "label": {
+                "en": "AI Spin"
+              }
+            },
+            {
+              "id": "aIWash",
+              "label": {
+                "en": "AI Wash"
+              }
+            },
+            {
+              "id": "cooling",
+              "label": {
+                "en": "Cooling"
+              }
+            },
+            {
+              "id": "delayWash",
+              "label": {
+                "en": "Delay Wash"
+              }
+            },
+            {
+              "id": "drying",
+              "label": {
+                "en": "Drying"
+              }
+            },
+            {
+              "id": "finish",
+              "label": {
+                "en": "Finish"
+              }
+            },
+            {
+              "id": "none",
+              "label": {
+                "en": "None"
+              }
+            },
+            {
+              "id": "preWash",
+              "label": {
+                "en": "Pre Wash"
+              }
+            },
+            {
+              "id": "rinse",
+              "label": {
+                "en": "Rinse"
+              }
+            },
+            {
+              "id": "spin",
+              "label": {
+                "en": "Spin"
+              }
+            },
+            {
+              "id": "wash",
+              "label": {
+                "en": "Wash"
+              }
+            },
+            {
+              "id": "weightSensing",
+              "label": {
+                "en": "Weight Sensing"
+              }
+            },
+            {
+              "id": "wrinklePrevent",
+              "label": {
+                "en": "Wrinkle Prevent"
+              }
+            },
+            {
+              "id": "freezeProtection",
+              "label": {
+                "en": "Freeze Protection"
+              }
+            }
+          ]
+        }
+      ],
+      "tokens": [
+        {
+          "type": "string",
+          "name": "washer_job_state",
+          "title": {
+            "en": "Job"
+          },
+          "example": {
+            "en": "finish"
           }
         }
       ]
@@ -21,18 +149,224 @@
     {
       "id": "washer_machine_state_changed",
       "title": {
-        "en": "The machine stated changed"
+        "en": "When state changed"
       },
       "tokens": [
         {
           "type": "string",
           "name": "washer_machine_state",
           "title": {
-            "en": "Washer Machine State"
+            "en": "State"
           },
           "example": {
-            "en": "The current washer machine state"
+            "en": "pause"
           }
+        }
+      ]
+    },
+    {
+      "id": "when-the-washer-state-became",
+      "title": {
+        "en": "When the state became..."
+      },
+      "titleFormatted": {
+        "en": "When the state became [[washer_machine_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "washer_machine_state",
+          "title": {
+            "en": "Pick a state"
+          },
+          "values": [
+            {
+              "id": "pause",
+              "label": {
+                "en": "Paused"
+              }
+            },
+            {
+              "id": "run",
+              "label": {
+                "en": "Running"
+              }
+            },
+            {
+              "id": "stop",
+              "label": {
+                "en": "Stopped"
+              }
+            }
+          ]
+        }
+      ],
+      "tokens": [
+        {
+          "type": "string",
+          "name": "washer_machine_state",
+          "title": {
+            "en": "Machine State"
+          },
+          "example": {
+            "en": "pause"
+          }
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "id": "is-doing-job",
+      "title": {
+        "en": "It !{{is|isn't}} doing job..."
+      },
+      "titleFormatted": {
+        "en": "It !{{is|isn't}} doing job [[washer_job_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "washer_job_state",
+          "title": {
+            "en": "Pick a job"
+          },
+          "values": [
+            {
+              "id": "airWash",
+              "label": {
+                "en": "Air Wash"
+              }
+            },
+            {
+              "id": "aIRinse",
+              "label": {
+                "en": "AI Rinse"
+              }
+            },
+            {
+              "id": "aISpin",
+              "label": {
+                "en": "AI Spin"
+              }
+            },
+            {
+              "id": "aIWash",
+              "label": {
+                "en": "AI Wash"
+              }
+            },
+            {
+              "id": "cooling",
+              "label": {
+                "en": "Cooling"
+              }
+            },
+            {
+              "id": "delayWash",
+              "label": {
+                "en": "Delay Wash"
+              }
+            },
+            {
+              "id": "drying",
+              "label": {
+                "en": "Drying"
+              }
+            },
+            {
+              "id": "finish",
+              "label": {
+                "en": "Finish"
+              }
+            },
+            {
+              "id": "none",
+              "label": {
+                "en": "None"
+              }
+            },
+            {
+              "id": "preWash",
+              "label": {
+                "en": "Pre Wash"
+              }
+            },
+            {
+              "id": "rinse",
+              "label": {
+                "en": "Rinse"
+              }
+            },
+            {
+              "id": "spin",
+              "label": {
+                "en": "Spin"
+              }
+            },
+            {
+              "id": "wash",
+              "label": {
+                "en": "Wash"
+              }
+            },
+            {
+              "id": "weightSensing",
+              "label": {
+                "en": "Weight Sensing"
+              }
+            },
+            {
+              "id": "wrinklePrevent",
+              "label": {
+                "en": "Wrinkle Prevent"
+              }
+            },
+            {
+              "id": "freezeProtection",
+              "label": {
+                "en": "Freeze Protection"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "is-in-state",
+      "title": {
+        "en": "It !{{is|isn't}} in state..."
+      },
+      "titleFormatted": {
+        "en": "It !{{is|isn't}} in state [[washer_machine_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "washer_machine_state",
+          "title": {
+            "en": "Pick a state"
+          },
+          "values": [
+            {
+              "id": "pause",
+              "label": {
+                "en": "Paused"
+              }
+            },
+            {
+              "id": "run",
+              "label": {
+                "en": "Running"
+              }
+            },
+            {
+              "id": "stop",
+              "label": {
+                "en": "Stopped"
+              }
+            }
+          ]
         }
       ]
     }
