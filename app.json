@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.mennovanhout.smartthings",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
@@ -68,135 +68,27 @@
         ]
       },
       {
-        "id": "washer_job_state_became",
+        "id": "washer_machine_state_changed",
         "title": {
-          "en": "The job state became..."
+          "en": "The machine stated changed"
         },
-        "titleFormatted": {
-          "en": "The job state became [[state]]"
-        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "washer_machine_state",
+            "title": {
+              "en": "Washer Machine State"
+            },
+            "example": {
+              "en": "The current washer machine state"
+            }
+          }
+        ],
         "args": [
           {
             "type": "device",
             "name": "device",
             "filter": "driver_id=washer"
-          },
-          {
-            "type": "dropdown",
-            "name": "state",
-            "title": {
-              "en": "State"
-            },
-            "values": [
-              {
-                "id": "airWash",
-                "label": {
-                  "en": "Air Wash"
-                }
-              },
-              {
-                "id": "aIRinse",
-                "label": {
-                  "en": "AI Rinse"
-                }
-              },
-              {
-                "id": "aISpin",
-                "label": {
-                  "en": "AI Spin"
-                }
-              },
-              {
-                "id": "aIWash",
-                "label": {
-                  "en": "AI Wash"
-                }
-              },
-              {
-                "id": "cooling",
-                "label": {
-                  "en": "Cooling"
-                }
-              },
-              {
-                "id": "delayWash",
-                "label": {
-                  "en": "Delay Wash"
-                }
-              },
-              {
-                "id": "drying",
-                "label": {
-                  "en": "Drying"
-                }
-              },
-              {
-                "id": "finish",
-                "label": {
-                  "en": "Finish"
-                }
-              },
-              {
-                "id": "none",
-                "label": {
-                  "en": "None"
-                }
-              },
-              {
-                "id": "preWash",
-                "label": {
-                  "en": "Pre Wash"
-                }
-              },
-              {
-                "id": "rinse",
-                "label": {
-                  "en": "Rinse"
-                }
-              },
-              {
-                "id": "spin",
-                "label": {
-                  "en": "Spin"
-                }
-              },
-              {
-                "id": "wash",
-                "label": {
-                  "en": "Wash"
-                }
-              },
-              {
-                "id": "weightSensing",
-                "label": {
-                  "en": "Weight Sensing"
-                }
-              },
-              {
-                "id": "wrinklePrevent",
-                "label": {
-                  "en": "Wrinkle Prevent"
-                }
-              },
-              {
-                "id": "freezeProtection",
-                "label": {
-                  "en": "Freeze Protection"
-                }
-              }
-            ]
-          }
-        ],
-        "tokens": [
-          {
-            "type": "string",
-            "name": "washer_job_state",
-            "title": {
-              "en": "Washer Job State"
-            },
-            "example": {
-              "en": "The current washer job state"
-            }
           }
         ]
       }
@@ -247,7 +139,7 @@
         "en": "Job State"
       },
       "getable": true,
-      "setable": true,
+      "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/icons/washer_job_state.svg",
       "values": [

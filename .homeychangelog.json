@@ -1,5 +1,11 @@
 {
   "1.0.0": {
     "en": "First release of adding washer sensors to Homey. To support all washmachines compatible with SmartThings"
+  },
+  "1.0.1": {
+    "en": "Made sure the changed flow card now works"
+  },
+  "1.0.2": {
+    "en": "Changed custom RestAPI's in SmartThings wrapper. Also introduced flowcards "
   }
 }

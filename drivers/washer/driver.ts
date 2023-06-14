@@ -1,24 +1,22 @@
 import Homey from 'homey';
-import axios from 'axios';
+import { BearerTokenAuthenticator, SmartThingsClient } from '@smartthings/core-sdk';
 
-class MyDriver extends Homey.Driver {
+class Driver extends Homey.Driver {
 
-  _deviceJobStateBecame: any;
+  private _deviceJobStateBecame: any;
+  // @ts-ignore
+  public deviceAPI: SmartThingsClient;
 
   async onInit() {
-    this._deviceJobStateBecame = this.homey.flow.getDeviceTriggerCard('washer_job_state_became');
+    this.deviceAPI = new SmartThingsClient(new BearerTokenAuthenticator(this.homey.settings.get('token')));
   }
 
   async onPairListDevices() {
-    const token = this.homey.settings.get('token');
-
-    const response = await axios.get('https://api.smartthings.com/v1/devices?capability=washerOperatingState', {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
+    const devices = await this.deviceAPI.devices.list({
+      capability: 'washerOperatingState',
     });
 
-    return response.data.items.map((item: any) => {
+    return devices.map((item: any) => {
       return {
         name: item.label,
         data: {
@@ -28,12 +26,6 @@ class MyDriver extends Homey.Driver {
     });
   }
 
-  triggerDeviceJobStateBecameFlow(device: any, tokens: any, state: any) {
-    this._deviceJobStateBecame.trigger(device, tokens, state)
-      .then(this.log)
-      .catch(this.error);
-  }
-
 }
 
-module.exports = MyDriver;
+module.exports = Driver;
