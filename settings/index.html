@@ -21,7 +21,7 @@
     </fieldset>
 
     <button id="save" class="homey-button-primary-full" data-i18n="settings.save"></button>
-    <a target="_blank" href="https://account.smartthings.com/tokens" class="homey-button-secondary-full" data-i18n="settings.create"></a>
+    <button id="smart-things" target="_blank" href="https://account.smartthings.com/tokens" class="homey-button-secondary-full" data-i18n="settings.create"></button>
 
     <script type="text/javascript">
       function onHomeyReady(Homey) {
@@ -29,6 +29,7 @@
 
         const tokenElement = document.getElementById("token");
         const saveElement = document.getElementById("save");
+        const smartThingsElement = document.getElementById("smart-things");
 
         Homey.get("token", function (err, username) {
           if (err) return Homey.alert(err);
@@ -61,6 +62,10 @@
           }).finally(() => {
             saveElement.classList.remove('is-loading');
           });
+        });
+
+        smartThingsElement.addEventListener("click", function (e) {
+          Homey.popup('https://account.smartthings.com/tokens');
         });
       }
     </script>

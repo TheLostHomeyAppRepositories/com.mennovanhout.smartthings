@@ -1,0 +1,212 @@
+{
+  "triggers": [
+    {
+      "id": "dryer_job_state_changed",
+      "title": {
+        "en": "When the job changed"
+      },
+      "tokens": [
+        {
+          "type": "string",
+          "name": "dryer_job_state",
+          "title": {
+            "en": "Job"
+          },
+          "example": {
+            "en": "finish"
+          }
+        }
+      ]
+    },
+    {
+      "id": "when-the-dryer-job-became",
+      "title": {
+        "en": "When the job became..."
+      },
+      "titleFormatted": {
+        "en": "When the job became [[dryer_job_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "dryer_job_state",
+          "title": {
+            "en": "Pick a job"
+          },
+          "values": [
+            { "id": "cooling", "label": { "en": "Cooling" }},
+            { "id": "delayWash", "label": { "en": "Delay Wash" }},
+            { "id": "drying", "label": { "en": "Drying" }},
+            { "id": "finished", "label": { "en": "Finished" }},
+            { "id": "none", "label": { "en": "None" }},
+            { "id": "refreshing", "label": { "en": "Refreshing" }},
+            { "id": "weightSensing", "label": { "en": "Weight Sensing" }},
+            { "id": "wrinklePrevent", "label": { "en": "Wrinkle Prevent" }},
+            { "id": "dehumidifying", "label": { "en": "Dehumidifying" }},
+            { "id": "aIDrying", "label": { "en": "AI Drying" }},
+            { "id": "sanitizing", "label": { "en": "Sanitizing" }},
+            { "id": "internalCare", "label": { "en": "Internal Care" }},
+            { "id": "freezeProtection", "label": { "en": "Freeze Protection" }},
+            { "id": "continuousDehumidifying", "label": { "en": "ContinuousDehumidifying" }},
+            { "id": "thawingFrozenInside", "label": { "en": "Thawing Frozen Inside" }}
+          ]
+        }
+      ],
+      "tokens": [
+        {
+          "type": "string",
+          "name": "dryer_job_state",
+          "title": {
+            "en": "Job"
+          },
+          "example": {
+            "en": "finish"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dryer_machine_state_changed",
+      "title": {
+        "en": "When state changed"
+      },
+      "tokens": [
+        {
+          "type": "string",
+          "name": "dryer_machine_state",
+          "title": {
+            "en": "State"
+          },
+          "example": {
+            "en": "pause"
+          }
+        }
+      ]
+    },
+    {
+      "id": "when-the-dryer-state-became",
+      "title": {
+        "en": "When the state became..."
+      },
+      "titleFormatted": {
+        "en": "When the state became [[dryer_machine_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "dryer_machine_state",
+          "title": {
+            "en": "Pick a state"
+          },
+          "values": [
+            {
+              "id": "pause",
+              "label": {
+                "en": "Paused"
+              }
+            },
+            {
+              "id": "run",
+              "label": {
+                "en": "Running"
+              }
+            },
+            {
+              "id": "stop",
+              "label": {
+                "en": "Stopped"
+              }
+            }
+          ]
+        }
+      ],
+      "tokens": [
+        {
+          "type": "string",
+          "name": "dryer_machine_state",
+          "title": {
+            "en": "Machine State"
+          },
+          "example": {
+            "en": "pause"
+          }
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "id": "dryer-is-doing-job",
+      "title": {
+        "en": "It !{{is|isn't}} doing job..."
+      },
+      "titleFormatted": {
+        "en": "It !{{is|isn't}} doing job [[dryer_job_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "dryer_job_state",
+          "title": {
+            "en": "Pick a job"
+          },
+          "values": [
+            { "id": "cooling", "label": { "en": "Cooling" }},
+            { "id": "delayWash", "label": { "en": "Delay Wash" }},
+            { "id": "drying", "label": { "en": "Drying" }},
+            { "id": "finished", "label": { "en": "Finished" }},
+            { "id": "none", "label": { "en": "None" }},
+            { "id": "refreshing", "label": { "en": "Refreshing" }},
+            { "id": "weightSensing", "label": { "en": "Weight Sensing" }},
+            { "id": "wrinklePrevent", "label": { "en": "Wrinkle Prevent" }},
+            { "id": "dehumidifying", "label": { "en": "Dehumidifying" }},
+            { "id": "aIDrying", "label": { "en": "AI Drying" }},
+            { "id": "sanitizing", "label": { "en": "Sanitizing" }},
+            { "id": "internalCare", "label": { "en": "Internal Care" }},
+            { "id": "freezeProtection", "label": { "en": "Freeze Protection" }},
+            { "id": "continuousDehumidifying", "label": { "en": "ContinuousDehumidifying" }},
+            { "id": "thawingFrozenInside", "label": { "en": "Thawing Frozen Inside" }}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dryer-is-in-state",
+      "title": {
+        "en": "It !{{is|isn't}} in state..."
+      },
+      "titleFormatted": {
+        "en": "It !{{is|isn't}} in state [[dryer_machine_state]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "dryer_machine_state",
+          "title": {
+            "en": "Pick a state"
+          },
+          "values": [
+            {
+              "id": "pause",
+              "label": {
+                "en": "Paused"
+              }
+            },
+            {
+              "id": "run",
+              "label": {
+                "en": "Running"
+              }
+            },
+            {
+              "id": "stop",
+              "label": {
+                "en": "Stopped"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

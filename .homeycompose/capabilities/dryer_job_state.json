@@ -1,0 +1,25 @@
+{
+  "type": "enum",
+  "title": {"en":  "Job"},
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/icons/drying_cloths.svg",
+  "values": [
+    { "id": "cooling", "title": { "en": "Cooling" }},
+    { "id": "delayWash", "title": { "en": "Delay Wash" }},
+    { "id": "drying", "title": { "en": "Drying" }},
+    { "id": "finished", "title": { "en": "Finished" }},
+    { "id": "none", "title": { "en": "None" }},
+    { "id": "refreshing", "title": { "en": "Refreshing" }},
+    { "id": "weightSensing", "title": { "en": "Weight Sensing" }},
+    { "id": "wrinklePrevent", "title": { "en": "Wrinkle Prevent" }},
+    { "id": "dehumidifying", "title": { "en": "Dehumidifying" }},
+    { "id": "aIDrying", "title": { "en": "AI Drying" }},
+    { "id": "sanitizing", "title": { "en": "Sanitizing" }},
+    { "id": "internalCare", "title": { "en": "Internal Care" }},
+    { "id": "freezeProtection", "title": { "en": "Freeze Protection" }},
+    { "id": "continuousDehumidifying", "title": { "en": "ContinuousDehumidifying" }},
+    { "id": "thawingFrozenInside", "title": { "en": "Thawing Frozen Inside" }}
+  ]
+}

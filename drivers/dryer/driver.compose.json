@@ -1,12 +1,12 @@
 {
   "name": {
-    "en": "Washer"
+    "en": "Dryer"
   },
   "class": "other",
   "icon": "{{driverAssetsPath}}/icon.svg",
   "capabilities": [
-    "washer_job_state",
-    "washer_machine_state"
+    "dryer_job_state",
+    "dryer_machine_state"
   ],
   "platforms": [
     "local"
@@ -20,10 +20,6 @@
     "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
   },
   "pair": [
-    {
-      "id": "loading",
-      "template": "loading"
-    },
     {
       "id": "list_devices",
       "template": "list_devices",

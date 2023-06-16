@@ -1,1 +1,1 @@
-Add support for SmartThings devices
+Let the symphony of the wash cycle play its final note, and let that sweet sound echo through the speakers! Get the word out, loud and clear across your household. It's laundry time! So, let everyone join the jamboree when the washing machine or dryer sings its done deal.

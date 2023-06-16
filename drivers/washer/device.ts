@@ -42,7 +42,7 @@ class Device extends Homey.Device {
     this.driver.ready().then(() => {
       this.updateInformation();
 
-      this.interval = setInterval(() => this.updateInformation(), 3000);
+      this.interval = setInterval(() => this.updateInformation(), 5000);
     });
   }
 

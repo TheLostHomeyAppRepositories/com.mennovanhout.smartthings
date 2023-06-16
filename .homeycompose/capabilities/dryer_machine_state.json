@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "title": {"en":  "Machine"},
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/icons/washer_machine_state.svg",
+  "values": [
+    { "id": "pause", "title": { "en": "Paused" }},
+    { "id": "run", "title": { "en": "Running" }},
+    { "id": "stop", "title": { "en": "Stopped" }}
+  ]
+}

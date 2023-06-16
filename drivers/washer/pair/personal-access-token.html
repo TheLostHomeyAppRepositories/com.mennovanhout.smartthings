@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+            type="text/javascript"
+            src="/homey.js"
+            data-origin="settings"
+    ></script>
+</head>
+<body>
+<header class="homey-header">
+    <h1 class="homey-title" data-i18n="settings.title"></h1>
+    <p class="homey-subtitle" data-i18n="settings.subtitle"></p>
+</header>
+
+<fieldset class="homey-form-fieldset">
+    <div class="homey-form-group">
+        <label class="homey-form-label" for="token">Personal Access Token</label>
+        <input class="homey-form-input" id="token" type="text" value="" />
+    </div>
+</fieldset>
+
+<button id="save" class="homey-button-primary-full" data-i18n="settings.save"></button>
+<button id="smart-things" target="_blank" href="https://account.smartthings.com/tokens" class="homey-button-secondary-full" data-i18n="settings.create"></button>
+
+<script type="text/javascript">
+    const tokenElement = document.getElementById("token");
+    const saveElement = document.getElementById("save");
+    const smartThingsElement = document.getElementById("smart-things");
+
+    Homey.get("token", function (err, username) {
+      if (err) return Homey.alert(err);
+      tokenElement.value = username;
+    });
+
+    saveElement.addEventListener("click", function (e) {
+      if (saveElement.classList.contains('is-loading')) return;
+
+      saveElement.classList.add('is-loading');
+
+      fetch('https://api.smartthings.com/v1/devices', {
+        headers: {
+          Authorization: 'Bearer ' +tokenElement.value
+        }
+      }).then(response => {
+        if (response.status !== 200) {
+          Homey.alert(__('settings.invalid_token'));
+
+          return;
+        }
+
+        Homey.set("token", tokenElement.value, function (err) {
+          if (err) return Homey.alert(err);
+
+          Homey.alert(__('settings.connected'));
+        });
+      }).catch(error => {
+        Homey.alert(error);
+      }).finally(() => {
+        saveElement.classList.remove('is-loading');
+      });
+    });
+
+    smartThingsElement.addEventListener("click", function (e) {
+      Homey.popup('https://account.smartthings.com/tokens');
+    });
+  }
+</script>
+</body>
+</html>

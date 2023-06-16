@@ -50,10 +50,35 @@ class Driver extends Homey.Driver {
     this._deviceMachineStateBecame.trigger(device, tokens, state).then(this.log).catch(this.error);
   }
 
-  async onPairListDevices() {
-    const devices = await this.deviceAPI.devices.list({
-      capability: 'washerOperatingState',
+  onPair(session: any) {
+    session.setHandler('showView', async (view: string) => {
+      if (view === 'loading') {
+        this.log('test1');
+        try {
+          await this.deviceAPI.devices.list();
+
+          this.log('test2');
+          await session.showView('list_devices');
+        } catch (error: any) {
+          this.log('test3');
+          await session.showView('personal-access-token');
+        }
+      }
     });
+  }
+
+  async onPairListDevices() {
+    let devices: any[] = [];
+
+    try {
+      devices = await this.deviceAPI.devices.list({
+        capability: 'washerOperatingState',
+      });
+    } catch (error: any) {
+      if (error.response.status === 401 || error.response.status === 403) {
+
+      }
+    }
 
     return devices.map((item: any) => {
       return {
