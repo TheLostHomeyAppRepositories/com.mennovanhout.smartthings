@@ -10,5 +10,8 @@
   },
   "1.1.0": {
     "en": "Added way more flow cards: Support for conditional(and) cards, support for inverted cards, support for specific job/state changes"
+  },
+  "1.2.0": {
+    "en": "Solved bug with pairing new devices. Added pairing option on adding your first device. Replaced images. Wrote instructions on how to get a personal access token. And other minor bug fixes"
   }
 }
