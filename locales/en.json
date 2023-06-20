@@ -3,8 +3,8 @@
     "title": "Connect SmartThings",
     "subtitle": "Connect SmartThings with a Personal Access Token",
     "invalid_token": "Invalid Personal Access Token",
-    "connected": "Connected to SmartThings",
-    "create": "Create Personal Access Token",
+    "connected": "Connected to SmartThings, Please restart the app!",
+    "create": "How to get a Personal Access Token?",
     "save": "Save Changes"
   }
 }

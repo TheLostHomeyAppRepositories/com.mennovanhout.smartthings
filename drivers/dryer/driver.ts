@@ -1,7 +1,8 @@
 import Homey, { FlowCardCondition, FlowCardTriggerDevice } from 'homey';
 import { BearerTokenAuthenticator, SmartThingsClient } from '@smartthings/core-sdk';
+import SmartThingsDriver from '../../shared/SmartThingsDriver';
 
-class Driver extends Homey.Driver {
+class Driver extends SmartThingsDriver {
 
   // @ts-ignore
   private _deviceJobStateBecame: FlowCardTriggerDevice;
@@ -15,6 +16,8 @@ class Driver extends Homey.Driver {
   public deviceAPI: SmartThingsClient;
 
   async onInit() {
+    this.requiredCapabilities = ['dryerOperatingState'];
+
     // When dryer job became flow card
     this._deviceJobStateBecame = this.homey.flow.getDeviceTriggerCard('when-the-dryer-job-became');
     this._deviceJobStateBecame.registerRunListener(async (args, state) => {
@@ -48,21 +51,6 @@ class Driver extends Homey.Driver {
 
   triggerDryerStateBecameFlow(device: Homey.Device, tokens: any, state:any) {
     this._deviceMachineStateBecame.trigger(device, tokens, state).then(this.log).catch(this.error);
-  }
-
-  async onPairListDevices() {
-    const devices = await this.deviceAPI.devices.list({
-      capability: 'dryerOperatingState',
-    });
-
-    return devices.map((item: any) => {
-      return {
-        name: item.label,
-        data: {
-          id: item.deviceId,
-        },
-      };
-    });
   }
 
 }

@@ -21,7 +21,7 @@
     </fieldset>
 
     <button id="save" class="homey-button-primary-full" data-i18n="settings.save"></button>
-    <button id="smart-things" target="_blank" href="https://account.smartthings.com/tokens" class="homey-button-secondary-full" data-i18n="settings.create"></button>
+    <button id="smart-things" class="homey-button-secondary-full" data-i18n="settings.create"></button>
 
     <script type="text/javascript">
       function onHomeyReady(Homey) {
@@ -65,7 +65,7 @@
         });
 
         smartThingsElement.addEventListener("click", function (e) {
-          Homey.popup('https://account.smartthings.com/tokens');
+          Homey.popup('https://community.homey.app/t/app-pro-smartthings-washers-wasmachines-dryers-samsung-washer-dryer/82319/9?u=menno_van_hout');
         });
       }
     </script>

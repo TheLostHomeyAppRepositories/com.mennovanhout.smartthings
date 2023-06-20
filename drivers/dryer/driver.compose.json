@@ -21,6 +21,13 @@
   },
   "pair": [
     {
+      "id": "loading",
+      "template": "loading"
+    },
+    {
+      "id": "personal-access-token"
+    },
+    {
       "id": "list_devices",
       "template": "list_devices",
       "navigation": {
