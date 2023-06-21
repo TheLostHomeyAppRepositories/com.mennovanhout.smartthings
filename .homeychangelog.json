@@ -13,5 +13,8 @@
   },
   "1.2.0": {
     "en": "Solved bug with pairing new devices. Added pairing option on adding your first device. Replaced images. Wrote instructions on how to get a personal access token. And other minor bug fixes"
+  },
+  "1.2.1": {
+    "en": "Updated app image"
   }
 }
