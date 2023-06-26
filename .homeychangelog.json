@@ -16,5 +16,8 @@
   },
   "1.2.1": {
     "en": "Updated app image"
+  },
+  "1.2.2": {
+    "en": "Make sure the app doens't crash when samsung fails to response."
   }
 }

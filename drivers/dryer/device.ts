@@ -9,33 +9,35 @@ class Device extends Homey.Device {
     const { id } = this.getData();
 
     // @ts-ignore
-    const status = await this.driver.deviceAPI.devices.getStatus(id);
+    this.driver.deviceAPI.devices.getStatus(id).then((status) => {
+      const oldDryerJobState = this.getCapabilityValue('dryer_job_state');
+      const oldDryerMachineState = this.getCapabilityValue('dryer_machine_state');
+      const dryerJobState = status.components.main.dryerOperatingState.dryerJobState.value;
+      const dryerMachineState = status.components.main.dryerOperatingState.machineState.value;
 
-    const oldDryerJobState = this.getCapabilityValue('dryer_job_state');
-    const oldDryerMachineState = this.getCapabilityValue('dryer_machine_state');
-    const dryerJobState = status.components.main.dryerOperatingState.dryerJobState.value;
-    const dryerMachineState = status.components.main.dryerOperatingState.machineState.value;
+      this.setCapabilityValue('dryer_job_state', dryerJobState).catch(this.error);
+      this.setCapabilityValue('dryer_machine_state', dryerMachineState).catch(this.error);
 
-    this.setCapabilityValue('dryer_job_state', dryerJobState).catch(this.error);
-    this.setCapabilityValue('dryer_machine_state', dryerMachineState).catch(this.error);
+      if (oldDryerJobState !== dryerJobState) {
+        // @ts-ignore
+        this.driver.triggerDryerJobBecameFlow(this, {
+          dryer_job_state: dryerJobState,
+        }, {
+          dryer_job_state: dryerJobState,
+        });
+      }
 
-    if (oldDryerJobState !== dryerJobState) {
-      // @ts-ignore
-      this.driver.triggerDryerJobBecameFlow(this, {
-        dryer_job_state: dryerJobState,
-      }, {
-        dryer_job_state: dryerJobState,
-      });
-    }
-
-    if (oldDryerMachineState !== dryerMachineState) {
-      // @ts-ignore
-      this.driver.triggerDryerStateBecameFlow(this, {
-        dryer_machine_state: dryerMachineState,
-      }, {
-        dryer_machine_state: dryerMachineState,
-      });
-    }
+      if (oldDryerMachineState !== dryerMachineState) {
+        // @ts-ignore
+        this.driver.triggerDryerStateBecameFlow(this, {
+          dryer_machine_state: dryerMachineState,
+        }, {
+          dryer_machine_state: dryerMachineState,
+        });
+      }
+    }).catch((error: any) => {
+      this.log(error, 'something went wrong while updating information');
+    });
   }
 
   async onInit() {
