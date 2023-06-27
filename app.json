@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.mennovanhout.smartthings",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
@@ -43,6 +43,111 @@
   },
   "flow": {
     "triggers": [
+      {
+        "id": "air_conditioning_mode_changed",
+        "title": {
+          "en": "When the mode changed",
+          "nl": "Wanneer mode is veranderd"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "air_conditioning_mode",
+            "title": {
+              "en": "Mode",
+              "nl": "Modus"
+            },
+            "example": {
+              "en": "cooling",
+              "nl": "cooling"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          }
+        ]
+      },
+      {
+        "id": "when_air_conditioning_mode_became",
+        "title": {
+          "en": "When the mode became...",
+          "nl": "Wanneer modus is veranderd in..."
+        },
+        "titleFormatted": {
+          "en": "When the mode became [[air_conditioning_mode]]",
+          "nl": "Wanneer modus is veranderd in [[air_conditioning_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_mode",
+            "title": {
+              "en": "Pick a mode",
+              "nl": "Kies een modus"
+            },
+            "values": [
+              {
+                "id": "cool",
+                "label": {
+                  "en": "Cool",
+                  "nl": "Koelen"
+                }
+              },
+              {
+                "id": "dry",
+                "label": {
+                  "en": "Dry",
+                  "nl": "Drogen"
+                }
+              },
+              {
+                "id": "wind",
+                "label": {
+                  "en": "Wind",
+                  "nl": "Wind"
+                }
+              },
+              {
+                "id": "auto",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch"
+                }
+              },
+              {
+                "id": "heat",
+                "label": {
+                  "en": "Heat",
+                  "nl": "Verwarmen"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "air_conditioning_mode",
+            "title": {
+              "en": "Mode",
+              "nl": "Modus"
+            },
+            "example": {
+              "en": "cool",
+              "nl": "cool"
+            }
+          }
+        ]
+      },
       {
         "id": "dryer_job_state_changed",
         "title": {
@@ -554,6 +659,69 @@
     ],
     "conditions": [
       {
+        "id": "air_conditioning_mode_is",
+        "title": {
+          "en": "It !{{is|isn't}} in mode...",
+          "nl": "!{{Is|Is niet}} in modus..."
+        },
+        "titleFormatted": {
+          "en": "It !{{is|isn't}} in mode [[air_conditioning_mode]]",
+          "nl": "!{{Is|Is niet}} in modus [[air_conditioning_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_mode",
+            "title": {
+              "en": "Pick a mode",
+              "nl": "Kies een modus"
+            },
+            "values": [
+              {
+                "id": "cool",
+                "label": {
+                  "en": "Cool",
+                  "nl": "Koelen"
+                }
+              },
+              {
+                "id": "dry",
+                "label": {
+                  "en": "Dry",
+                  "nl": "Drogen"
+                }
+              },
+              {
+                "id": "wind",
+                "label": {
+                  "en": "Wind",
+                  "nl": "Wind"
+                }
+              },
+              {
+                "id": "auto",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch"
+                }
+              },
+              {
+                "id": "heat",
+                "label": {
+                  "en": "Heat",
+                  "nl": "Verwarmen"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "dryer-is-doing-job",
         "title": {
           "en": "It !{{is|isn't}} doing job...",
@@ -893,9 +1061,119 @@
           }
         ]
       }
+    ],
+    "actions": [
+      {
+        "id": "set_air_conditioning_mode",
+        "title": {
+          "en": "Set mode to...",
+          "nl": "Zet modus op..."
+        },
+        "titleFormatted": {
+          "en": "Set mode to [[air_conditioning_mode]]",
+          "nl": "Zet modus op [[air_conditioning_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_mode",
+            "title": {
+              "en": "Pick a mode",
+              "nl": "Kies een modus"
+            },
+            "values": [
+              {
+                "id": "cool",
+                "label": {
+                  "en": "Cool",
+                  "nl": "Koelen"
+                }
+              },
+              {
+                "id": "dry",
+                "label": {
+                  "en": "Dry",
+                  "nl": "Drogen"
+                }
+              },
+              {
+                "id": "wind",
+                "label": {
+                  "en": "Wind",
+                  "nl": "Wind"
+                }
+              },
+              {
+                "id": "auto",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch"
+                }
+              },
+              {
+                "id": "heat",
+                "label": {
+                  "en": "Heat",
+                  "nl": "Verwarmen"
+                }
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "drivers": [
+    {
+      "name": {
+        "en": "Air Conditioning",
+        "nl": "Airco"
+      },
+      "class": "thermostat",
+      "icon": "/drivers/air_conditioning/assets/icon.svg",
+      "capabilities": [
+        "target_temperature",
+        "measure_temperature",
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/air_conditioning/assets/images/small.png",
+        "large": "/drivers/air_conditioning/assets/images/large.png",
+        "xlarge": "/drivers/air_conditioning/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "personal-access-token"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "air_conditioning"
+    },
     {
       "name": {
         "en": "Dryer",
@@ -986,6 +1264,53 @@
     }
   ],
   "capabilities": {
+    "air_conditioning_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Mode"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "icon": "/assets/icons/drying_cloths.svg",
+      "values": [
+        {
+          "id": "cool",
+          "title": {
+            "en": "Cool",
+            "nl": "Koelen"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Dry",
+            "nl": "Drogen"
+          }
+        },
+        {
+          "id": "wind",
+          "title": {
+            "en": "Wind",
+            "nl": "Wind"
+          }
+        },
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto",
+            "nl": "Automatisch"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat",
+            "nl": "Verwarmen"
+          }
+        }
+      ]
+    },
     "dryer_job_state": {
       "type": "enum",
       "title": {
