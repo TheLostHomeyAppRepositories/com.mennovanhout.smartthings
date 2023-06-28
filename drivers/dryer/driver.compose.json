@@ -12,7 +12,7 @@
     "local"
   ],
   "connectivity": [
-    "lan"
+    "cloud"
   ],
   "images": {
     "small": "{{driverAssetsPath}}/images/small.png",

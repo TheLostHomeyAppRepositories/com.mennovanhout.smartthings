@@ -9,6 +9,14 @@ class Device extends Homey.Device {
   // @ts-ignore
   private interval: NodeJS.Timer;
 
+  public startUpdateInterval() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
+
+    this.interval = setInterval(() => this.updateInformation(), 5000);
+  }
+
   async updateInformation() {
     const { id } = this.getData();
 
@@ -92,13 +100,13 @@ class Device extends Homey.Device {
     const { id } = this.getData();
 
     this.driver.ready().then(() => {
-      this.updateInformation();
-
-      this.interval = setInterval(() => this.updateInformation(), 5000);
+      this.startUpdateInterval();
 
       // When temperature changes
       this.registerCapabilityListener('target_temperature', (temperature) => {
         this.setCapabilityValue('target_temperature', temperature).catch(this.error);
+
+        this.startUpdateInterval();
 
         this.driver.deviceAPI.devices.executeCommand(id, {
           capability: 'thermostatCoolingSetpoint',
@@ -132,6 +140,8 @@ class Device extends Homey.Device {
       // When turned on/off
       this.registerCapabilityListener('onoff', (on) => {
         this.setCapabilityValue('onoff', on).catch(this.error);
+
+        this.startUpdateInterval();
 
         this.driver.deviceAPI.devices.executeCommand(id, {
           capability: 'switch',
