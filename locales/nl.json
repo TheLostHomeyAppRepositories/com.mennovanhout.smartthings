@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "title": "Koppel SmartThings",
+    "subtitle": "Koppel SmartThings met een Personal Access Token",
+    "invalid_token": "Ongeldige Personal Access Token",
+    "connected": "Gekoppeld met SmartThings, herstart de app aub!",
+    "create": "Hoe krijg ik een Personal Access Token?",
+    "save": "Opslaan"
+  }
+}
