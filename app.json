@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.mennovanhout.smartthings",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
@@ -47,7 +47,7 @@
         "id": "air_conditioning_mode_changed",
         "title": {
           "en": "When the mode changed",
-          "nl": "Wanneer mode is veranderd"
+          "nl": "Wanneer modus is veranderd"
         },
         "tokens": [
           {
@@ -58,8 +58,8 @@
               "nl": "Modus"
             },
             "example": {
-              "en": "cooling",
-              "nl": "cooling"
+              "en": "cool",
+              "nl": "cool"
             }
           }
         ],
@@ -144,6 +144,209 @@
             "example": {
               "en": "cool",
               "nl": "cool"
+            }
+          }
+        ]
+      },
+      {
+        "id": "air_conditioning_fan_mode_changed",
+        "title": {
+          "en": "When the fan mode changed",
+          "nl": "Wanneer verntialtie modus is veranderd"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "air_conditioning_fan_mode",
+            "title": {
+              "en": "Fan mode",
+              "nl": "Vertilatie modus"
+            },
+            "example": {
+              "en": "auto",
+              "nl": "auto"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          }
+        ]
+      },
+      {
+        "id": "when_air_conditioning_fan_mode_became",
+        "title": {
+          "en": "When the fan mode became...",
+          "nl": "Wanneer ventilatiemodus is veranderd in..."
+        },
+        "titleFormatted": {
+          "en": "When the fan mode became [[air_conditioning_fan_mode]]",
+          "nl": "Wanneer ventilatiemodus is veranderd in [[air_conditioning_fan_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_fan_mode",
+            "title": {
+              "en": "Pick a fan mode",
+              "nl": "Kies een ventilatiemodus"
+            },
+            "values": [
+              {
+                "id": "auto",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch"
+                }
+              },
+              {
+                "id": "low",
+                "label": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "medium",
+                "label": {
+                  "en": "Medium",
+                  "nl": "Gemiddeld"
+                }
+              },
+              {
+                "id": "high",
+                "label": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "turbo",
+                "label": {
+                  "en": "Turbo",
+                  "nl": "Turbo"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "air_conditioning_fan_mode",
+            "title": {
+              "en": "Fan mode",
+              "nl": "ventilatiemodus"
+            },
+            "example": {
+              "en": "auto",
+              "nl": "auto"
+            }
+          }
+        ]
+      },
+      {
+        "id": "air_conditioning_fan_oscillation_mode_changed",
+        "title": {
+          "en": "When the fan oscillation mode changed",
+          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "air_conditioning_fan_oscillation_mode",
+            "title": {
+              "en": "Fan oscillation mode",
+              "nl": "Ventilator-oscillatiemodus"
+            },
+            "example": {
+              "en": "all",
+              "nl": "all"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          }
+        ]
+      },
+      {
+        "id": "when_air_conditioning_fan_oscillation_mode_became",
+        "title": {
+          "en": "When the fan oscillation mode became...",
+          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in..."
+        },
+        "titleFormatted": {
+          "en": "When the fan oscillation mode became [[air_conditioning_fan_oscillation_mode]]",
+          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in [[air_conditioning_fan_oscillation_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_fan_oscillation_mode",
+            "title": {
+              "en": "Pick a fan oscillation mode",
+              "nl": "Kies een Ventilator-oscillatiemodus"
+            },
+            "values": [
+              {
+                "id": "fixed",
+                "label": {
+                  "en": "Fixed",
+                  "nl": "Vast"
+                }
+              },
+              {
+                "id": "all",
+                "label": {
+                  "en": "All",
+                  "nl": "Allemaal"
+                }
+              },
+              {
+                "id": "vertical",
+                "label": {
+                  "en": "Vertical",
+                  "nl": "Verticaal"
+                }
+              },
+              {
+                "id": "horizontal",
+                "label": {
+                  "en": "Horizontal",
+                  "nl": "Horizontaal"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "air_conditioning_fan_oscillation_mode",
+            "title": {
+              "en": "Fan oscillation mode",
+              "nl": "Ventilator-oscillatiemodus"
+            },
+            "example": {
+              "en": "all",
+              "nl": "all"
             }
           }
         ]
@@ -722,6 +925,125 @@
         ]
       },
       {
+        "id": "air_conditioning_fan_mode_is",
+        "title": {
+          "en": "It !{{is|isn't}} in fan mode...",
+          "nl": "!{{Is|Is niet}} in ventilatiemodus..."
+        },
+        "titleFormatted": {
+          "en": "It !{{is|isn't}} in fan mode [[air_conditioning_fan_mode]]",
+          "nl": "!{{Is|Is niet}} in ventilatiemodus [[air_conditioning_fan_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_fan_mode",
+            "title": {
+              "en": "Pick a fan mode",
+              "nl": "Kies een ventilatiemodus"
+            },
+            "values": [
+              {
+                "id": "auto",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch"
+                }
+              },
+              {
+                "id": "low",
+                "label": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "medium",
+                "label": {
+                  "en": "Medium",
+                  "nl": "Gemiddeld"
+                }
+              },
+              {
+                "id": "high",
+                "label": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "turbo",
+                "label": {
+                  "en": "Turbo",
+                  "nl": "Turbo"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "air_conditioning_fan_oscillation_mode_is",
+        "title": {
+          "en": "It !{{is|isn't}} in fan oscillation mode...",
+          "nl": "!{{Is|Is niet}} in Ventilator-oscillatiemodus..."
+        },
+        "titleFormatted": {
+          "en": "It !{{is|isn't}} in fan oscillation mode [[air_conditioning_fan_oscillation_mode]]",
+          "nl": "!{{Is|Is niet}} in ventilator-oscillatiemodus [[air_conditioning_fan_oscillation_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_fan_oscillation_mode",
+            "title": {
+              "en": "Pick a fan oscillation mode",
+              "nl": "Kies een ventilator-oscillatiemodus"
+            },
+            "values": [
+              {
+                "id": "fixed",
+                "label": {
+                  "en": "Fixed",
+                  "nl": "Vast"
+                }
+              },
+              {
+                "id": "all",
+                "label": {
+                  "en": "All",
+                  "nl": "Allemaal"
+                }
+              },
+              {
+                "id": "vertical",
+                "label": {
+                  "en": "Vertical",
+                  "nl": "Verticaal"
+                }
+              },
+              {
+                "id": "horizontal",
+                "label": {
+                  "en": "Horizontal",
+                  "nl": "Horizontaal"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "dryer-is-doing-job",
         "title": {
           "en": "It !{{is|isn't}} doing job...",
@@ -1125,6 +1447,125 @@
             ]
           }
         ]
+      },
+      {
+        "id": "set_air_conditioning_fan_mode",
+        "title": {
+          "en": "Set fan mode to...",
+          "nl": "Zet ventilatiemodus op..."
+        },
+        "titleFormatted": {
+          "en": "Set fan mode to [[air_conditioning_fan_mode]]",
+          "nl": "Zet ventilatiemodus op [[air_conditioning_fan_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_fan_mode",
+            "title": {
+              "en": "Pick a fan mode",
+              "nl": "Kies een ventilatiemodus"
+            },
+            "values": [
+              {
+                "id": "auto",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch"
+                }
+              },
+              {
+                "id": "low",
+                "label": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "medium",
+                "label": {
+                  "en": "Medium",
+                  "nl": "Gemiddeld"
+                }
+              },
+              {
+                "id": "high",
+                "label": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "turbo",
+                "label": {
+                  "en": "Turbo",
+                  "nl": "Turbo"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_air_conditioning_fan_oscillation_mode",
+        "title": {
+          "en": "Set fan oscillation mode to...",
+          "nl": "Zet ventilator-oscillatiemodus op..."
+        },
+        "titleFormatted": {
+          "en": "Set fan oscillationmode to [[air_conditioning_fan_oscillation_mode]]",
+          "nl": "Zet ventilator-oscillatiemodus op [[air_conditioning_fan_oscillation_mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=air_conditioning"
+          },
+          {
+            "type": "dropdown",
+            "name": "air_conditioning_fan_oscillation_mode",
+            "title": {
+              "en": "Pick a fan mode",
+              "nl": "Kies een ventilatiemodus"
+            },
+            "values": [
+              {
+                "id": "fixed",
+                "label": {
+                  "en": "Fixed",
+                  "nl": "Vast"
+                }
+              },
+              {
+                "id": "all",
+                "label": {
+                  "en": "All",
+                  "nl": "Allemaal"
+                }
+              },
+              {
+                "id": "vertical",
+                "label": {
+                  "en": "Vertical",
+                  "nl": "Verticaal"
+                }
+              },
+              {
+                "id": "horizontal",
+                "label": {
+                  "en": "Horizontal",
+                  "nl": "Horizontaal"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1139,6 +1580,7 @@
       "capabilities": [
         "target_temperature",
         "measure_temperature",
+        "measure_humidity",
         "onoff"
       ],
       "platforms": [
@@ -1264,15 +1706,102 @@
     }
   ],
   "capabilities": {
-    "air_conditioning_mode": {
+    "air_conditioning_fan_mode": {
       "type": "enum",
       "title": {
-        "en": "Mode"
+        "en": "Fan mode",
+        "nl": "Ventilator modus"
       },
       "getable": true,
       "setable": true,
       "uiComponent": "picker",
-      "icon": "/assets/icons/drying_cloths.svg",
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto",
+            "nl": "Automatisch"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "medium",
+          "title": {
+            "en": "Medium",
+            "nl": "Gemiddeld"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "turbo",
+          "title": {
+            "en": "Turbo",
+            "nl": "Turbo"
+          }
+        }
+      ]
+    },
+    "air_conditioning_fan_oscillation_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Fan oscillation mode",
+        "nl": "Ventilator-oscillatiemodus"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "fixed",
+          "title": {
+            "en": "Fixed",
+            "nl": "Vast"
+          }
+        },
+        {
+          "id": "all",
+          "title": {
+            "en": "All",
+            "nl": "Allemaal"
+          }
+        },
+        {
+          "id": "vertical",
+          "title": {
+            "en": "Vertical",
+            "nl": "Verticaal"
+          }
+        },
+        {
+          "id": "horizontal",
+          "title": {
+            "en": "Horizontal",
+            "nl": "Horizontaal"
+          }
+        }
+      ]
+    },
+    "air_conditioning_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Mode",
+        "nl": "Modus"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
       "values": [
         {
           "id": "cool",
