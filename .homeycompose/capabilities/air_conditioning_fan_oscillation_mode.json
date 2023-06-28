@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "title": {"en":  "Fan oscillation mode", "nl":  "Ventilator-oscillatiemodus"},
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "values": [
+    { "id": "fixed", "title": { "en": "Fixed", "nl": "Vast" }},
+    { "id": "all", "title": { "en": "All", "nl": "Allemaal" }},
+    { "id": "vertical", "title": { "en": "Vertical", "nl": "Verticaal" }},
+    { "id": "horizontal", "title": { "en": "Horizontal", "nl": "Horizontaal" }}
+  ]
+}
