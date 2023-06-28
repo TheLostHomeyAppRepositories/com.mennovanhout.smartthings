@@ -84,6 +84,9 @@ class Driver extends SmartThingsDriver {
 
     device.setCapabilityValue('air_conditioning_mode', newMode).catch(this.error);
 
+    // @ts-ignore
+    device.startUpdateInterval();
+
     this.deviceAPI.devices.executeCommand(id, {
       capability: 'airConditionerMode',
       command: 'setAirConditionerMode',
@@ -95,7 +98,6 @@ class Driver extends SmartThingsDriver {
       }, {
         air_conditioning_mode: newMode,
       });
-      this.log(response);
     }).catch((error: any) => {
       this.log(error, error.response);
     });
@@ -105,6 +107,9 @@ class Driver extends SmartThingsDriver {
     const device = this.getDevice({ id });
 
     device.setCapabilityValue('air_conditioning_fan_mode', newMode).catch(this.error);
+
+    // @ts-ignore
+    device.startUpdateInterval();
 
     this.deviceAPI.devices.executeCommand(id, {
       capability: 'airConditionerFanMode',
@@ -127,6 +132,9 @@ class Driver extends SmartThingsDriver {
     const device = this.getDevice({ id });
 
     device.setCapabilityValue('air_conditioning_fan_oscillation_mode', newMode).catch(this.error);
+
+    // @ts-ignore
+    device.startUpdateInterval();
 
     this.deviceAPI.devices.executeCommand(id, {
       capability: 'fanOscillationMode',
