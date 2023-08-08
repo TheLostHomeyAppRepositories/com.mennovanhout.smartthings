@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Washing Program"
+  },
+  "icon": "/assets/icons/shirt.svg",
+  "uiComponent": "sensor",
+  "getable": true,
+  "setable": true
+}

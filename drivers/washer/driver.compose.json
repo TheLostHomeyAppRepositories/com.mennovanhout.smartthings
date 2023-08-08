@@ -5,6 +5,7 @@
   "class": "other",
   "icon": "{{driverAssetsPath}}/icon.svg",
   "capabilities": [
+    "onoff",
     "washer_job_state",
     "washer_machine_state"
   ],

@@ -92,6 +92,11 @@ class Device extends Homey.Device {
         }
       }
     }).catch((error: any) => {
+      if (error.response?.status === 403) {
+        this.setUnavailable('Device unavailable');
+
+        return;
+      }
       this.log(error, 'something went wrong while updating information');
     });
   }
