@@ -605,7 +605,7 @@
       {
         "id": "washer_job_state_changed",
         "title": {
-          "en": "When the job changed",
+          "en": "the job changed",
           "da": "Når programmet ændres"
         },
         "tokens": [
@@ -633,11 +633,11 @@
       {
         "id": "when-the-washer-job-became",
         "title": {
-          "en": "When the job became...",
+          "en": "the job became...",
           "da": "Når programmet bliver..."
         },
         "titleFormatted": {
-          "en": "When the job became [[washer_job_state]]",
+          "en": "the job became [[washer_job_state]]",
           "da": "Når programmet bliver [[washer_job_state]]"
         },
         "args": [
@@ -771,7 +771,7 @@
       {
         "id": "washer_machine_state_changed",
         "title": {
-          "en": "When state changed",
+          "en": "state changed",
           "da": "Når status ændres"
         },
         "tokens": [
@@ -799,11 +799,11 @@
       {
         "id": "when-the-washer-state-became",
         "title": {
-          "en": "When the state became...",
+          "en": "the state became...",
           "da": "Når status bliver..."
         },
         "titleFormatted": {
-          "en": "When the state became [[washer_machine_state]]",
+          "en": "the state became [[washer_machine_state]]",
           "da": "Når status bliver [[washer_machine_state]]"
         },
         "args": [
@@ -856,6 +856,31 @@
               "en": "pause",
               "da": "pause"
             }
+          }
+        ]
+      },
+      {
+        "id": "samsungce_washer_cycle_changed",
+        "title": {
+          "en": "the washing program changed"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "samsungce_washer_cycle",
+            "title": {
+              "en": "Washing Program"
+            },
+            "example": {
+              "en": "Eco 40 - 60"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
           }
         ]
       }
@@ -1566,6 +1591,63 @@
             ]
           }
         ]
+      },
+      {
+        "id": "set-washing-program",
+        "title": {
+          "en": "set washing program"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          },
+          {
+            "type": "autocomplete",
+            "name": "program",
+            "placeholder": {
+              "en": "Choose program"
+            }
+          }
+        ]
+      },
+      {
+        "id": "set-washer-machine-state",
+        "title": {
+          "en": "Set machine state"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=washer"
+          },
+          {
+            "type": "dropdown",
+            "name": "washer_machine_state",
+            "values": [
+              {
+                "id": "pause",
+                "label": {
+                  "en": "Pause"
+                }
+              },
+              {
+                "id": "run",
+                "label": {
+                  "en": "Run"
+                }
+              },
+              {
+                "id": "stop",
+                "label": {
+                  "en": "Stop"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1668,6 +1750,7 @@
       "class": "other",
       "icon": "/drivers/washer/assets/icon.svg",
       "capabilities": [
+        "onoff",
         "washer_job_state",
         "washer_machine_state"
       ],
@@ -1974,6 +2057,16 @@
           }
         }
       ]
+    },
+    "samsungce_washer_cycle": {
+      "type": "string",
+      "title": {
+        "en": "Washing Program"
+      },
+      "icon": "/assets/icons/shirt.svg",
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": true
     },
     "washer_job_state": {
       "type": "enum",

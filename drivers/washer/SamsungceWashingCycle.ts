@@ -1,0 +1,66 @@
+'use strict';
+
+const washingPrograms: {[name: string]: string} = {
+  Table_00_Course_D0: 'Cotton Wash',
+  Table_00_Course_D1: 'Eco Cotton Wash',
+  Table_00_Course_D2: 'Synthetics',
+  Table_00_Course_D3: 'Delicates',
+  Table_00_Course_D4: 'Rinse & Spin',
+  Table_00_Course_D5: 'Drum Cleaning',
+  Table_00_Course_D6: 'Bed Linnen',
+  Table_00_Course_D7: 'Outdoor',
+  Table_00_Course_D8: 'Wool',
+  Table_00_Course_D9: 'Dark Wash',
+  Table_00_Course_DA: 'Super Eco Wash',
+  Table_00_Course_DB: 'Super Speed Wash',
+  Table_00_Course_DC: '15\' Quick Wash',
+  Table_00_Course_BA: 'Spin',
+  Table_02_Course_1B: 'Cotton',
+  Table_02_Course_1C: 'Eco 40-60',
+  Table_02_Course_1D: 'Super Speed Wash',
+  Table_02_Course_1E: '15\' Quick Wash',
+  Table_02_Course_1F: 'Intense Cold',
+  Table_02_Course_20: 'Hygenic Steam',
+  Table_02_Course_21: 'Colored Wash',
+  Table_02_Course_22: 'Wool',
+  Table_02_Course_23: 'Outdoor',
+  Table_02_Course_24: 'Bed Linnen',
+  Table_02_Course_25: 'Syntetic',
+  Table_02_Course_26: 'Delicates',
+  Table_02_Course_27: 'Rinse & Spin',
+  Table_02_Course_28: 'Drain & Spin',
+  Table_02_Course_29: 'Drum Cleaning',
+  Table_02_Course_2A: 'Jeans',
+  Table_02_Course_2B: 'All Wash',
+  Table_02_Course_2D: 'Silent Wash',
+  Table_02_Course_2E: 'Baby Clothes',
+  Table_02_Course_2F: 'Sportswear',
+  Table_02_Course_30: 'Cloudy Day',
+  Table_02_Course_32: 'Shirts',
+  Table_02_Course_33: 'Towels',
+  Table_03_Course_16: 'Cotton',
+  Table_03_Course_17: 'Super Speed',
+  Table_03_Course_18: 'Synthetics',
+  Table_03_Course_19: 'Delicates',
+  Table_03_Course_1A: 'Wool',
+  Table_03_Course_1B: 'Bed Linnen',
+  Table_03_Course_1C: 'Shirts',
+  Table_03_Course_1D: 'Towels',
+  Table_03_Course_1E: 'Outdoor',
+  Table_03_Course_1F: 'Colored Wash',
+  Table_03_Course_20: 'Iron Dry',
+  Table_03_Course_21: 'Hygenic Care',
+  Table_03_Course_23: '35\' Fast Dry',
+  Table_03_Course_24: 'Cold Air',
+  Table_03_Course_25: 'Warm Air',
+  Table_03_Course_26: 'Air Wash',
+  Table_03_Course_27: 'Time Program',
+};
+
+export const getLogicalName = (cycleId: string): string => {
+  if (washingPrograms[cycleId] !== undefined) {
+    return washingPrograms[cycleId];
+  }
+
+  return 'Unknown';
+};

@@ -1,17 +1,16 @@
-import Homey, { FlowCardCondition, FlowCardTriggerDevice } from 'homey';
+import Homey, { FlowCardAction, FlowCardCondition, FlowCardTriggerDevice } from 'homey';
 import { BearerTokenAuthenticator, SmartThingsClient } from '@smartthings/core-sdk';
 import SmartThingsDriver from '../../shared/SmartThingsDriver';
+import { getLogicalName } from './SamsungceWashingCycle';
 
 class Driver extends SmartThingsDriver {
 
-  // @ts-ignore
-  private _deviceJobStateBecame: FlowCardTriggerDevice;
-  // @ts-ignore
-  private _deviceMachineStateBecame: FlowCardTriggerDevice;
-  // @ts-ignore
-  private _deviceIsDoingJob: FlowCardCondition;
-  // @ts-ignore
-  private _deviceIsInState: FlowCardCondition;
+  private _deviceJobStateBecame: FlowCardTriggerDevice|undefined;
+  private _deviceMachineStateBecame: FlowCardTriggerDevice|undefined;
+  private _deviceIsDoingJob: FlowCardCondition|undefined;
+  private _deviceIsInState: FlowCardCondition|undefined;
+  private _setWashingProgram: FlowCardAction|undefined;
+  private _setWasherMachineState: FlowCardAction|undefined;
 
   async onInit() {
     this.requiredCapabilities = ['washerOperatingState'];
@@ -40,15 +39,71 @@ class Driver extends SmartThingsDriver {
       return args.washer_machine_state === args.device.getCapabilityValue('washer_machine_state');
     });
 
+    // Set washing program
+    this._setWashingProgram = this.homey.flow.getActionCard('set-washing-program');
+    this._setWashingProgram.registerArgumentAutocompleteListener('program', async (query, args) => {
+      const results = args.device.supportedWashingPrograms.map((program: string) => {
+        return {
+          name: getLogicalName(program),
+          id: program,
+        };
+      });
+
+      return results.filter((result: any) => {
+        return result.name.toLowerCase().includes(query.toLowerCase());
+      });
+    });
+    this._setWashingProgram.registerRunListener(async (args, state) => {
+      await this.setWashingProgram(args.device, args.program);
+    });
+
+    // Set waching machine state
+    this._setWasherMachineState = this.homey.flow.getActionCard('set-washer-machine-state');
+    this._setWasherMachineState.registerRunListener(async (args, state) => {
+      await this.setWashingMachineState(args.device, args.washer_machine_state);
+    });
+
     this.deviceAPI = new SmartThingsClient(new BearerTokenAuthenticator(this.homey.settings.get('token')));
   }
 
+  setWashingProgram(device: Homey.Device, program: { id: string; }) {
+    return new Promise((resolve, reject) => {
+      this.deviceAPI.devices.executeCommand(device.getData().id, {
+        capability: 'samsungce.washerCycle',
+        command: 'setWasherCycle',
+        arguments: [`Course_${program.id.slice(program.id.lastIndexOf('_') + 1)}`],
+      }).then((responese: any) => {
+        this.log(responese);
+        resolve(true);
+      }).catch((error: any) => {
+        this.log(error, error.response);
+        reject();
+      });
+    });
+  }
+
+  setWashingMachineState(device: Homey.Device, state: string) {
+    return new Promise((resolve, reject) => {
+      this.deviceAPI.devices.executeCommand(device.getData().id, {
+        capability: 'washerOperatingState',
+        command: 'setMachineState',
+        arguments: [state],
+      }).then((responese: any) => {
+        this.log(responese);
+        resolve(true);
+      }).catch((error: any) => {
+        this.log(error, error.response);
+        reject();
+      });
+    });
+  }
+
   triggerWasherJobBecameFlow(device: Homey.Device, tokens: any, state:any) {
-    this._deviceJobStateBecame.trigger(device, tokens, state).then(this.log).catch(this.error);
+    this._deviceJobStateBecame?.trigger(device, tokens, state).then(this.log).catch(this.error);
   }
 
   triggerWasherStateBecameFlow(device: Homey.Device, tokens: any, state:any) {
-    this._deviceMachineStateBecame.trigger(device, tokens, state).then(this.log).catch(this.error);
+    this._deviceMachineStateBecame?.trigger(device, tokens, state).then(this.log).catch(this.error);
   }
 
 }
