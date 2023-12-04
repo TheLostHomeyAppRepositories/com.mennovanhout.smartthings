@@ -1,6 +1,7 @@
 {
   "name": {
-    "en": "Dryer"
+    "en": "Dryer",
+    "da": "Tørretumbler"
   },
   "class": "other",
   "icon": "{{driverAssetsPath}}/icon.svg",

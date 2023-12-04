@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "title": "Forbind til SmartThings",
+    "subtitle": "Forbind SmartThings med en Personlig Access Token",
+    "invalid_token": "Forkert Personlig Access Token",
+    "connected": "Forbind til SmartThings, derefter Genstart app!",
+    "create": "Hvordan finder man Personlig Access Token?",
+    "save": "Gem indstillinger"
+  }
+}
