@@ -1,6 +1,7 @@
 {
   "name": {
-    "en": "Washer"
+    "en": "Washer",
+    "da": "Vaskemaskine"
   },
   "class": "other",
   "icon": "{{driverAssetsPath}}/icon.svg",

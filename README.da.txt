@@ -1,0 +1,1 @@
+Lad vaskecyklussens symfoni spille sin sidste tone, og lad den søde lyd ekko gennem højttalerne! Få ordet højt og tydeligt i hele din husstand. Det er vasketid! Så lad alle høre det, når vaskemaskinen eller tørretumbleren synger sin færdige melodi.

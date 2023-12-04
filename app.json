@@ -11,7 +11,8 @@
     "en": "SmartThings"
   },
   "description": {
-    "en": "One simple home system. A world of possibilities."
+    "en": "One simple home system. A world of possibilities.",
+    "da": "Et simplet hjemmesystem. En verden af mulighedder."
   },
   "category": [
     "appliances"
@@ -45,17 +46,20 @@
       {
         "id": "dryer_job_state_changed",
         "title": {
-          "en": "When the job changed"
+          "en": "When the job changed",
+          "da": "Når programmet skifter"
         },
         "tokens": [
           {
             "type": "string",
             "name": "dryer_job_state",
             "title": {
-              "en": "Job"
+              "en": "Job",
+              "da": "Program"
             },
             "example": {
-              "en": "finish"
+              "en": "finish",
+              "da": "stoppet"
             }
           }
         ],
@@ -70,10 +74,12 @@
       {
         "id": "when-the-dryer-job-became",
         "title": {
-          "en": "When the job became..."
+          "en": "When the job became...",
+          "da": "Når programmet bliver..."
         },
         "titleFormatted": {
-          "en": "When the job became [[dryer_job_state]]"
+          "en": "When the job became [[dryer_job_state]]",
+          "da": "Når programmet bliver [[dryer_job_state]]"
         },
         "args": [
           {
@@ -85,7 +91,8 @@
             "type": "dropdown",
             "name": "dryer_job_state",
             "title": {
-              "en": "Pick a job"
+              "en": "Pick a job",
+              "da": "Vælg et program"
             },
             "values": [
               {
@@ -186,10 +193,12 @@
             "type": "string",
             "name": "dryer_job_state",
             "title": {
-              "en": "Job"
+              "en": "Job",
+              "da": "Program"
             },
             "example": {
-              "en": "finish"
+              "en": "finish",
+              "da": "stoppet"
             }
           }
         ]
@@ -197,17 +206,20 @@
       {
         "id": "dryer_machine_state_changed",
         "title": {
-          "en": "When state changed"
+          "en": "When state changed",
+          "da": "Når status ændres"
         },
         "tokens": [
           {
             "type": "string",
             "name": "dryer_machine_state",
             "title": {
-              "en": "State"
+              "en": "State",
+              "da": "Status"
             },
             "example": {
-              "en": "pause"
+              "en": "pause",
+              "da": "pause"
             }
           }
         ],
@@ -222,10 +234,12 @@
       {
         "id": "when-the-dryer-state-became",
         "title": {
-          "en": "When the state became..."
+          "en": "When the state became...",
+          "da": "Når status bliver..."
         },
         "titleFormatted": {
-          "en": "When the state became [[dryer_machine_state]]"
+          "en": "When the state became [[dryer_machine_state]]",
+          "da": "Når status bliver [[dryer_machine_state]]"
         },
         "args": [
           {
@@ -237,25 +251,29 @@
             "type": "dropdown",
             "name": "dryer_machine_state",
             "title": {
-              "en": "Pick a state"
+              "en": "Pick a state",
+              "da": "Vælg en status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
-                  "en": "Paused"
+                  "en": "Paused",
+                  "da": "Pause"
                 }
               },
               {
                 "id": "run",
                 "label": {
-                  "en": "Running"
+                  "en": "Running",
+                  "da": "Kører"
                 }
               },
               {
                 "id": "stop",
                 "label": {
-                  "en": "Stopped"
+                  "en": "Stopped",
+                  "da": "Stoppet"
                 }
               }
             ]
@@ -266,10 +284,12 @@
             "type": "string",
             "name": "dryer_machine_state",
             "title": {
-              "en": "Machine State"
+              "en": "Machine State",
+              "da": "Maskine Status"
             },
             "example": {
-              "en": "pause"
+              "en": "pause",
+              "da": "pause"
             }
           }
         ]
@@ -277,17 +297,20 @@
       {
         "id": "washer_job_state_changed",
         "title": {
-          "en": "When the job changed"
+          "en": "When the job changed",
+          "da": "Når programmet ændres"
         },
         "tokens": [
           {
             "type": "string",
             "name": "washer_job_state",
             "title": {
-              "en": "Job"
+              "en": "Job",
+              "da": "Program"
             },
             "example": {
-              "en": "finish"
+              "en": "finish",
+              "da": "stoppet"
             }
           }
         ],
@@ -302,10 +325,12 @@
       {
         "id": "when-the-washer-job-became",
         "title": {
-          "en": "When the job became..."
+          "en": "When the job became...",
+          "da": "Når programmet bliver..."
         },
         "titleFormatted": {
-          "en": "When the job became [[washer_job_state]]"
+          "en": "When the job became [[washer_job_state]]",
+          "da": "Når programmet bliver [[washer_job_state]]"
         },
         "args": [
           {
@@ -317,7 +342,8 @@
             "type": "dropdown",
             "name": "washer_job_state",
             "title": {
-              "en": "Pick a job"
+              "en": "Pick a job",
+              "da": "Vælg et program"
             },
             "values": [
               {
@@ -424,10 +450,12 @@
             "type": "string",
             "name": "washer_job_state",
             "title": {
-              "en": "Job"
+              "en": "Job",
+              "da": "Program"
             },
             "example": {
-              "en": "finish"
+              "en": "finish",
+              "da": "stoppet"
             }
           }
         ]
@@ -435,17 +463,20 @@
       {
         "id": "washer_machine_state_changed",
         "title": {
-          "en": "When state changed"
+          "en": "When state changed",
+          "da": "Når status ændres"
         },
         "tokens": [
           {
             "type": "string",
             "name": "washer_machine_state",
             "title": {
-              "en": "State"
+              "en": "State",
+              "da": "Status"
             },
             "example": {
-              "en": "pause"
+              "en": "pause",
+              "da": "pause"
             }
           }
         ],
@@ -460,10 +491,12 @@
       {
         "id": "when-the-washer-state-became",
         "title": {
-          "en": "When the state became..."
+          "en": "When the state became...",
+          "da": "Når status bliver..."
         },
         "titleFormatted": {
-          "en": "When the state became [[washer_machine_state]]"
+          "en": "When the state became [[washer_machine_state]]",
+          "da": "Når status bliver [[washer_machine_state]]"
         },
         "args": [
           {
@@ -475,25 +508,29 @@
             "type": "dropdown",
             "name": "washer_machine_state",
             "title": {
-              "en": "Pick a state"
+              "en": "Pick a state",
+              "da": "Vælg en status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
-                  "en": "Paused"
+                  "en": "Paused",
+                  "da": "Pause"
                 }
               },
               {
                 "id": "run",
                 "label": {
-                  "en": "Running"
+                  "en": "Running",
+                  "da": "Kører"
                 }
               },
               {
                 "id": "stop",
                 "label": {
-                  "en": "Stopped"
+                  "en": "Stopped",
+                  "da": "Stoppet"
                 }
               }
             ]
@@ -504,10 +541,12 @@
             "type": "string",
             "name": "washer_machine_state",
             "title": {
-              "en": "Machine State"
+              "en": "Machine State",
+              "da": "Maskine Status"
             },
             "example": {
-              "en": "pause"
+              "en": "pause",
+              "da": "pause"
             }
           }
         ]
@@ -517,10 +556,12 @@
       {
         "id": "dryer-is-doing-job",
         "title": {
-          "en": "It !{{is|isn't}} doing job..."
+          "en": "It !{{is|isn't}} doing job...",
+          "da": "Det !{{kører|kører ikke}} programmet..."
         },
         "titleFormatted": {
-          "en": "It !{{is|isn't}} doing job [[dryer_job_state]]"
+          "en": "It !{{is|isn't}} doing job [[dryer_job_state]]",
+          "da": "Det !{{kører|kører ikke}} programmet [[dryer_job_state]]"
         },
         "args": [
           {
@@ -532,7 +573,8 @@
             "type": "dropdown",
             "name": "dryer_job_state",
             "title": {
-              "en": "Pick a job"
+              "en": "Pick a job",
+              "da": "Vælg et program"
             },
             "values": [
               {
@@ -632,10 +674,12 @@
       {
         "id": "dryer-is-in-state",
         "title": {
-          "en": "It !{{is|isn't}} in state..."
+          "en": "It !{{is|isn't}} in state...",
+          "da": "Det !{{er|er ikke}} i status..."
         },
         "titleFormatted": {
-          "en": "It !{{is|isn't}} in state [[dryer_machine_state]]"
+          "en": "It !{{is|isn't}} in state [[dryer_machine_state]]",
+          "da": "Det !{{er|er ikke}} i status [[dryer_machine_state]]"
         },
         "args": [
           {
@@ -647,25 +691,29 @@
             "type": "dropdown",
             "name": "dryer_machine_state",
             "title": {
-              "en": "Pick a state"
+              "en": "Pick a state",
+              "da": "Vælg en status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
-                  "en": "Paused"
+                  "en": "Paused",
+                  "da": "Pause"
                 }
               },
               {
                 "id": "run",
                 "label": {
-                  "en": "Running"
+                  "en": "Running",
+                  "da": "Kører"
                 }
               },
               {
                 "id": "stop",
                 "label": {
-                  "en": "Stopped"
+                  "en": "Stopped",
+                  "da": "Stoppet"
                 }
               }
             ]
@@ -675,10 +723,12 @@
       {
         "id": "is-doing-job",
         "title": {
-          "en": "It !{{is|isn't}} doing job..."
+          "en": "It !{{is|isn't}} doing job...",
+          "da": "Det !{{kører|kører ikke}} programmet..."
         },
         "titleFormatted": {
-          "en": "It !{{is|isn't}} doing job [[washer_job_state]]"
+          "en": "It !{{is|isn't}} doing job [[washer_job_state]]",
+          "da": "Det !{{kører|kører ikke}} programmet [[washer_job_state]]"
         },
         "args": [
           {
@@ -690,7 +740,8 @@
             "type": "dropdown",
             "name": "washer_job_state",
             "title": {
-              "en": "Pick a job"
+              "en": "Pick a job",
+              "da": "Vælg et program"
             },
             "values": [
               {
@@ -796,10 +847,12 @@
       {
         "id": "is-in-state",
         "title": {
-          "en": "It !{{is|isn't}} in state..."
+          "en": "It !{{is|isn't}} in state...",
+          "da": "Det !{{er|er ikke}} i status..."
         },
         "titleFormatted": {
-          "en": "It !{{is|isn't}} in state [[washer_machine_state]]"
+          "en": "It !{{is|isn't}} in state [[washer_machine_state]]",
+          "da": "Det !{{er|er ikke}} i status [[washer_machine_state]]"
         },
         "args": [
           {
@@ -811,25 +864,29 @@
             "type": "dropdown",
             "name": "washer_machine_state",
             "title": {
-              "en": "Pick a state"
+              "en": "Pick a state",
+              "da": "Vælg en status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
-                  "en": "Paused"
+                  "en": "Paused",
+                  "da": "Pause"
                 }
               },
               {
                 "id": "run",
                 "label": {
-                  "en": "Running"
+                  "en": "Running",
+                  "da": "Kører"
                 }
               },
               {
                 "id": "stop",
                 "label": {
-                  "en": "Stopped"
+                  "en": "Stopped",
+                  "da": "Stoppet"
                 }
               }
             ]
@@ -841,7 +898,8 @@
   "drivers": [
     {
       "name": {
-        "en": "Dryer"
+        "en": "Dryer",
+        "da": "Tørretumbler"
       },
       "class": "other",
       "icon": "/drivers/dryer/assets/icon.svg",
@@ -884,7 +942,8 @@
     },
     {
       "name": {
-        "en": "Washer"
+        "en": "Washer",
+        "da": "Vaskemaskine"
       },
       "class": "other",
       "icon": "/drivers/washer/assets/icon.svg",
@@ -1042,19 +1101,22 @@
         {
           "id": "pause",
           "title": {
-            "en": "Paused"
+            "en": "Paused",
+            "da": "Pause"
           }
         },
         {
           "id": "run",
           "title": {
-            "en": "Running"
+            "en": "Running",
+            "da": "Kører"
           }
         },
         {
           "id": "stop",
           "title": {
-            "en": "Stopped"
+            "en": "Stopped",
+            "da": "Stoppet"
           }
         }
       ]
@@ -1180,19 +1242,22 @@
         {
           "id": "pause",
           "title": {
-            "en": "Paused"
+            "en": "Paused",
+            "da": "Pause"
           }
         },
         {
           "id": "run",
           "title": {
-            "en": "Running"
+            "en": "Running",
+            "da": "Kører"
           }
         },
         {
           "id": "stop",
           "title": {
-            "en": "Stopped"
+            "en": "Stopped",
+            "da": "Stoppet"
           }
         }
       ]
