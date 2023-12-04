@@ -68,7 +68,8 @@
           },
           "example": {
             "en": "finish",
-            "da": "stoppet"
+            "da": "stoppet",
+            "nl": "einde"
           }
         }
       ]
@@ -77,7 +78,8 @@
       "id": "dryer_machine_state_changed",
       "title": {
         "en": "When state changed",
-        "da": "Når status ændres"
+        "da": "Når status ændres",
+        "nl": "Wanneer de status verandert"
       },
       "tokens": [
         {
@@ -85,11 +87,13 @@
           "name": "dryer_machine_state",
           "title": {
             "en": "State",
-            "da": "Status"
+            "da": "Status",
+            "nl": "Status"
           },
           "example": {
             "en": "pause",
-            "da": "pause"
+            "da": "pause",
+            "nl": "pauze"
           }
         }
       ]
@@ -98,11 +102,13 @@
       "id": "when-the-dryer-state-became",
       "title": {
         "en": "When the state became...",
-        "da": "Når status bliver..."
+        "da": "Når status bliver...",
+        "nl": "Wanneer de status wordt in ..."
       },
       "titleFormatted": {
         "en": "When the state became [[dryer_machine_state]]",
-        "da": "Når status bliver [[dryer_machine_state]]"
+        "da": "Når status bliver [[dryer_machine_state]]",
+        "nl": "Wanneer de status wordt in [[dryer_machine_state]]"
       },
       "args": [
         {
@@ -110,28 +116,32 @@
           "name": "dryer_machine_state",
           "title": {
             "en": "Pick a state",
-            "da": "Vælg en status"
+            "da": "Vælg en status",
+            "nl": "Kies een status"
           },
           "values": [
             {
               "id": "pause",
               "label": {
                 "en": "Paused",
-                "da": "Pause"
+                "da": "Pause",
+                "nl": "Gepauzeerd"
               }
             },
             {
               "id": "run",
               "label": {
                 "en": "Running",
-                "da": "Kører"
+                "da": "Kører",
+                "nl": "Bezig"
               }
             },
             {
               "id": "stop",
               "label": {
                 "en": "Stopped",
-                "da": "Stoppet"
+                "da": "Stoppet",
+                "nl": "Gestopt"
               }
             }
           ]
@@ -143,11 +153,13 @@
           "name": "dryer_machine_state",
           "title": {
             "en": "Machine State",
-            "da": "Maskine Status"
+            "da": "Maskine Status",
+            "nl": "Machine Status"
           },
           "example": {
             "en": "pause",
-            "da": "pause"
+            "da": "pause",
+            "nl": "pauze"
           }
         }
       ]
@@ -158,11 +170,13 @@
       "id": "dryer-is-doing-job",
       "title": {
         "en": "It !{{is|isn't}} doing job...",
-        "da": "Det !{{kører|kører ikke}} programmet..."
+        "da": "Det !{{kører|kører ikke}} programmet...",
+        "nl": "Het !{{is|is niet}} bezig met de taak..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} doing job [[dryer_job_state]]",
-        "da": "Det !{{kører|kører ikke}} programmet [[dryer_job_state]]"
+        "da": "Det !{{kører|kører ikke}} programmet [[dryer_job_state]]",
+        "nl": "Het !{{is|is niet}} bezig met de taak [[dryer_job_state]]"
       },
       "args": [
         {
@@ -170,7 +184,8 @@
           "name": "dryer_job_state",
           "title": {
             "en": "Pick a job",
-            "da": "Vælg et program"
+            "da": "Vælg et program",
+            "nl": "Kies een taak"
           },
           "values": [
             { "id": "cooling", "label": { "en": "Cooling" }},
@@ -196,11 +211,13 @@
       "id": "dryer-is-in-state",
       "title": {
         "en": "It !{{is|isn't}} in state...",
-        "da": "Det !{{er|er ikke}} i status..."
+        "da": "Det !{{er|er ikke}} i status...",
+        "nl": "Het !{{is|is niet}} in de status..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} in state [[dryer_machine_state]]",
-        "da": "Det !{{er|er ikke}} i status [[dryer_machine_state]]"
+        "da": "Det !{{er|er ikke}} i status [[dryer_machine_state]]",
+        "nl": "Het !{{is|is niet}} in de status [[dryer_machine_state]]"
       },
       "args": [
         {
@@ -208,28 +225,32 @@
           "name": "dryer_machine_state",
           "title": {
             "en": "Pick a state",
-            "da": "Vælg en status"
+            "da": "Vælg en status",
+            "nl": "Kies een status"
           },
           "values": [
             {
               "id": "pause",
               "label": {
                 "en": "Paused",
-                "da": "Pause"
+                "da": "Pause",
+                "nl": "Gepauzeerd"
               }
             },
             {
               "id": "run",
               "label": {
                 "en": "Running",
-                "da": "Kører"
+                "da": "Kører",
+                "nl": "Bezig"
               }
             },
             {
               "id": "stop",
               "label": {
                 "en": "Stopped",
-                "da": "Stoppet"
+                "da": "Stoppet",
+                "nl": "Gestopt"
               }
             }
           ]

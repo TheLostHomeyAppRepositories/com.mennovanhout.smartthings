@@ -6,8 +6,8 @@
   "uiComponent": "sensor",
   "icon": "/assets/icons/washer_machine_state.svg",
   "values": [
-    { "id": "pause", "title": { "en": "Paused", "da": "Pause" }},
-    { "id": "run", "title": { "en": "Running", "da": "Kører" }},
-    { "id": "stop", "title": { "en": "Stopped", "da": "Stoppet" }}
+    { "id": "pause", "title": { "en": "Paused", "da": "Pause", "nl": "Gepauzeerd" }},
+    { "id": "run", "title": { "en": "Running", "da": "Kører", "nl": "Aan" }},
+    { "id": "stop", "title": { "en": "Stopped", "da": "Stoppet", "nl": "Uit" }}
   ]
 }

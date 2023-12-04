@@ -4,7 +4,8 @@
       "id": "washer_job_state_changed",
       "title": {
         "en": "the job changed",
-        "da": "Når programmet ændres"
+        "da": "Når programmet ændres",
+        "nl": "de wascyclus veranderd",
       },
       "tokens": [
         {
@@ -12,11 +13,13 @@
           "name": "washer_job_state",
           "title": {
             "en": "Job",
-            "da": "Program"
+            "da": "Program",
+            "nl": "Wascyclus",
           },
           "example": {
             "en": "finish",
-            "da": "stoppet"
+            "da": "stoppet",
+            "nl": "klaar",
           }
         }
       ]
@@ -25,11 +28,13 @@
       "id": "when-the-washer-job-became",
       "title": {
         "en": "the job became...",
-        "da": "Når programmet bliver..."
+        "da": "Når programmet bliver...",
+        "nl": "de wascyclus wordt...",
       },
       "titleFormatted": {
         "en": "the job became [[washer_job_state]]",
-        "da": "Når programmet bliver [[washer_job_state]]"
+        "da": "Når programmet bliver [[washer_job_state]]",
+        "nl": "de wascyclus wordt [[washer_job_state]]",
       },
       "args": [
         {
@@ -37,7 +42,8 @@
           "name": "washer_job_state",
           "title": {
             "en": "Pick a job",
-            "da": "Vælg et program"
+            "da": "Vælg et program",
+            "nl": "Kies een wascyclus"
           },
           "values": [
             {
@@ -145,11 +151,13 @@
           "name": "washer_job_state",
           "title": {
             "en": "Job",
-            "da": "Program"
+            "da": "Program",
+            "nl": "Wascyclus",
           },
           "example": {
             "en": "finish",
-            "da": "stoppet"
+            "da": "stoppet",
+            "nl": "klaar"
           }
         }
       ]
@@ -158,7 +166,8 @@
       "id": "washer_machine_state_changed",
       "title": {
         "en": "state changed",
-        "da": "Når status ændres"
+        "da": "Når status ændres",
+        "nl": "de status veranderd"
       },
       "tokens": [
         {
@@ -166,11 +175,13 @@
           "name": "washer_machine_state",
           "title": {
             "en": "State",
-            "da": "Status"
+            "da": "Status",
+            "nl": "Status"
           },
           "example": {
             "en": "pause",
-            "da": "pause"
+            "da": "pause",
+            "nl": "pauze"
           }
         }
       ]
@@ -179,11 +190,13 @@
       "id": "when-the-washer-state-became",
       "title": {
         "en": "the state became...",
-        "da": "Når status bliver..."
+        "da": "Når status bliver...",
+        "nl": "de status wordt..."
       },
       "titleFormatted": {
         "en": "the state became [[washer_machine_state]]",
-        "da": "Når status bliver [[washer_machine_state]]"
+        "da": "Når status bliver [[washer_machine_state]]",
+        "nl": "de status wordt [[washer_machine_state]]"
       },
       "args": [
         {
@@ -191,28 +204,32 @@
           "name": "washer_machine_state",
           "title": {
             "en": "Pick a state",
-            "da": "Vælg en status"
+            "da": "Vælg en status",
+            "nl": "Kies een status"
           },
           "values": [
             {
               "id": "pause",
               "label": {
                 "en": "Paused",
-                "da": "Pause"
+                "da": "Pause",
+                "nl": "Pauze"
               }
             },
             {
               "id": "run",
               "label": {
                 "en": "Running",
-                "da": "Kører"
+                "da": "Kører",
+                "nl": "Bezig"
               }
             },
             {
               "id": "stop",
               "label": {
                 "en": "Stopped",
-                "da": "Stoppet"
+                "da": "Stoppet",
+                "nl": "Gestopt"
               }
             }
           ]
@@ -224,11 +241,13 @@
           "name": "washer_machine_state",
           "title": {
             "en": "Machine State",
-            "da": "Maskine Status"
+            "da": "Maskine Status",
+            "nl": "Machine Status"
           },
           "example": {
             "en": "pause",
-            "da": "pause"
+            "da": "pause",
+            "nl": "pauze"
           }
         }
       ]
@@ -236,14 +255,18 @@
     {
       "id": "samsungce_washer_cycle_changed",
       "title": {
-        "en": "the washing program changed"
+        "en": "the washing program changed",
+        "da": "Når programmet ændres",
+        "nl": "het wasprogramma veranderd"
       },
       "tokens": [
         {
           "type": "string",
           "name": "samsungce_washer_cycle",
           "title": {
-            "en": "Washing Program"
+            "en": "Washing Program",
+            "da": "Program",
+            "nl": "Wascyclus"
           },
           "example": {
             "en": "Eco 40 - 60"
@@ -257,11 +280,13 @@
       "id": "is-doing-job",
       "title": {
         "en": "It !{{is|isn't}} doing job...",
-        "da": "Det !{{kører|kører ikke}} programmet..."
+        "da": "Det !{{kører|kører ikke}} programmet...",
+        "nl": "de wascyclus !{{is|isn't}} bezig..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} doing job [[washer_job_state]]",
-        "da": "Det !{{kører|kører ikke}} programmet [[washer_job_state]]"
+        "da": "Det !{{kører|kører ikke}} programmet [[washer_job_state]]",
+        "nl": "de wascyclus !{{is|isn't}} bezig [[washer_job_state]]"
       },
       "args": [
         {
@@ -269,7 +294,8 @@
           "name": "washer_job_state",
           "title": {
             "en": "Pick a job",
-            "da": "Vælg et program"
+            "da": "Vælg et program",
+            "nl": "Kies een wascyclus"
           },
           "values": [
             {
@@ -376,11 +402,13 @@
       "id": "is-in-state",
       "title": {
         "en": "It !{{is|isn't}} in state...",
-        "da": "Det !{{er|er ikke}} i status..."
+        "da": "Det !{{er|er ikke}} i status...",
+        "nl": "de status !{{is|isn't}}..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} in state [[washer_machine_state]]",
-        "da": "Det !{{er|er ikke}} i status [[washer_machine_state]]"
+        "da": "Det !{{er|er ikke}} i status [[washer_machine_state]]",
+        "nl": "de status !{{is|isn't}} [[washer_machine_state]]"
       },
       "args": [
         {
@@ -388,28 +416,32 @@
           "name": "washer_machine_state",
           "title": {
             "en": "Pick a state",
-            "da": "Vælg en status"
+            "da": "Vælg en status",
+            "nl": "Kies een status"
           },
           "values": [
             {
               "id": "pause",
               "label": {
                 "en": "Paused",
-                "da": "Pause"
+                "da": "Pause",
+                "nl": "Pauze"
               }
             },
             {
               "id": "run",
               "label": {
                 "en": "Running",
-                "da": "Kører"
+                "da": "Kører",
+                "nl": "Bezig"
               }
             },
             {
               "id": "stop",
               "label": {
                 "en": "Stopped",
-                "da": "Stoppet"
+                "da": "Stoppet",
+                "nl": "Gestopt"
               }
             }
           ]
@@ -421,14 +453,18 @@
     {
       "id": "set-washing-program",
       "title": {
-        "en": "set washing program"
+        "en": "set washing program",
+        "da": "sæt program",
+        "nl": "zet wascyclus"
       },
       "args": [
         {
           "type": "autocomplete",
           "name": "program",
           "placeholder": {
-            "en": "Choose program"
+            "en": "Choose program",
+            "da": "Vælg program",
+            "nl": "Kies wascyclus"
           }
         }
       ]
@@ -436,7 +472,9 @@
     {
       "id": "set-washer-machine-state",
       "title": {
-        "en": "Set machine state"
+        "en": "Set machine state",
+        "da": "Sæt maskine status",
+        "nl": "Zet machine status"
       },
       "args": [
         {
@@ -446,19 +484,25 @@
             {
               "id": "pause",
               "label": {
-                "en": "Pause"
+                "en": "Pause",
+                "da": "Pause",
+                "nl": "Pauze"
               }
             },
             {
               "id": "run",
               "label": {
-                "en": "Run"
+                "en": "Run",
+                "da": "Kør",
+                "nl": "Start"
               }
             },
             {
               "id": "stop",
               "label": {
-                "en": "Stop"
+                "en": "Stop",
+                "da": "Stop",
+                "nl": "Stop"
               }
             }
           ]
