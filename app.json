@@ -47,7 +47,8 @@
         "id": "air_conditioning_mode_changed",
         "title": {
           "en": "When the mode changed",
-          "nl": "Wanneer modus is veranderd"
+          "nl": "Wanneer modus is veranderd",
+          "da": "Når tilstand ændres"
         },
         "tokens": [
           {
@@ -55,11 +56,13 @@
             "name": "air_conditioning_mode",
             "title": {
               "en": "Mode",
-              "nl": "Modus"
+              "nl": "Modus",
+              "da": "Tilstand"
             },
             "example": {
               "en": "cool",
-              "nl": "cool"
+              "nl": "cool",
+              "da": "kold"
             }
           }
         ],
@@ -75,11 +78,13 @@
         "id": "when_air_conditioning_mode_became",
         "title": {
           "en": "When the mode became...",
-          "nl": "Wanneer modus is veranderd in..."
+          "nl": "Wanneer modus is veranderd in...",
+          "da": "Når tilstand ændres..."
         },
         "titleFormatted": {
           "en": "When the mode became [[air_conditioning_mode]]",
-          "nl": "Wanneer modus is veranderd in [[air_conditioning_mode]]"
+          "nl": "Wanneer modus is veranderd in [[air_conditioning_mode]]",
+          "da": "Når tilstand bliver [[air_conditioning_mode]]"
         },
         "args": [
           {
@@ -92,42 +97,48 @@
             "name": "air_conditioning_mode",
             "title": {
               "en": "Pick a mode",
-              "nl": "Kies een modus"
+              "nl": "Kies een modus",
+              "da": "Vælg en tilstand"
             },
             "values": [
               {
                 "id": "cool",
                 "label": {
                   "en": "Cool",
-                  "nl": "Koelen"
+                  "nl": "Koelen",
+                  "da": "Kold"
                 }
               },
               {
                 "id": "dry",
                 "label": {
                   "en": "Dry",
-                  "nl": "Drogen"
+                  "nl": "Drogen",
+                  "da": "Tør"
                 }
               },
               {
                 "id": "wind",
                 "label": {
                   "en": "Wind",
-                  "nl": "Wind"
+                  "nl": "Wind",
+                  "da": "Vind"
                 }
               },
               {
                 "id": "auto",
                 "label": {
                   "en": "Auto",
-                  "nl": "Automatisch"
+                  "nl": "Automatisch",
+                  "da": "Automatisk"
                 }
               },
               {
                 "id": "heat",
                 "label": {
                   "en": "Heat",
-                  "nl": "Verwarmen"
+                  "nl": "Verwarmen",
+                  "da": "Varm"
                 }
               }
             ]
@@ -139,11 +150,13 @@
             "name": "air_conditioning_mode",
             "title": {
               "en": "Mode",
-              "nl": "Modus"
+              "nl": "Modus",
+              "da": "Tilstand"
             },
             "example": {
               "en": "cool",
-              "nl": "cool"
+              "nl": "cool",
+              "da": "kold"
             }
           }
         ]
@@ -152,7 +165,8 @@
         "id": "air_conditioning_fan_mode_changed",
         "title": {
           "en": "When the fan mode changed",
-          "nl": "Wanneer verntialtie modus is veranderd"
+          "nl": "Wanneer verntialtie modus is veranderd",
+          "da": "Når ventilator tilstand ændres"
         },
         "tokens": [
           {
@@ -160,11 +174,13 @@
             "name": "air_conditioning_fan_mode",
             "title": {
               "en": "Fan mode",
-              "nl": "Vertilatie modus"
+              "nl": "Vertilatie modus",
+              "da": "Ventilator tilstand"
             },
             "example": {
               "en": "auto",
-              "nl": "auto"
+              "nl": "auto",
+              "da": "automatisk"
             }
           }
         ],
@@ -180,11 +196,13 @@
         "id": "when_air_conditioning_fan_mode_became",
         "title": {
           "en": "When the fan mode became...",
-          "nl": "Wanneer ventilatiemodus is veranderd in..."
+          "nl": "Wanneer ventilatiemodus is veranderd in...",
+          "da": "Når ventilator tilstand bliver..."
         },
         "titleFormatted": {
           "en": "When the fan mode became [[air_conditioning_fan_mode]]",
-          "nl": "Wanneer ventilatiemodus is veranderd in [[air_conditioning_fan_mode]]"
+          "nl": "Wanneer ventilatiemodus is veranderd in [[air_conditioning_fan_mode]]",
+          "da": "Når ventilator tilstand bliver [[air_conditioning_fan_mode]]"
         },
         "args": [
           {
@@ -204,35 +222,40 @@
                 "id": "auto",
                 "label": {
                   "en": "Auto",
-                  "nl": "Automatisch"
+                  "nl": "Automatisch",
+                  "da": "Automatisk"
                 }
               },
               {
                 "id": "low",
                 "label": {
                   "en": "Low",
-                  "nl": "Laag"
+                  "nl": "Laag",
+                  "da": "Lav"
                 }
               },
               {
                 "id": "medium",
                 "label": {
                   "en": "Medium",
-                  "nl": "Gemiddeld"
+                  "nl": "Gemiddeld",
+                  "da": "Mellem"
                 }
               },
               {
                 "id": "high",
                 "label": {
                   "en": "High",
-                  "nl": "Hoog"
+                  "nl": "Hoog",
+                  "da": "Høj"
                 }
               },
               {
                 "id": "turbo",
                 "label": {
                   "en": "Turbo",
-                  "nl": "Turbo"
+                  "nl": "Turbo",
+                  "da": "Turbo"
                 }
               }
             ]
@@ -244,11 +267,13 @@
             "name": "air_conditioning_fan_mode",
             "title": {
               "en": "Fan mode",
-              "nl": "ventilatiemodus"
+              "nl": "ventilatiemodus",
+              "da": "Ventilator tilstand"
             },
             "example": {
               "en": "auto",
-              "nl": "auto"
+              "nl": "auto",
+              "da": "automatisk"
             }
           }
         ]
@@ -257,7 +282,8 @@
         "id": "air_conditioning_fan_oscillation_mode_changed",
         "title": {
           "en": "When the fan oscillation mode changed",
-          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd"
+          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd",
+          "da": "Når Ventilations oscillation tilstand ændres"
         },
         "tokens": [
           {
@@ -265,11 +291,13 @@
             "name": "air_conditioning_fan_oscillation_mode",
             "title": {
               "en": "Fan oscillation mode",
-              "nl": "Ventilator-oscillatiemodus"
+              "nl": "Ventilator-oscillatiemodus",
+              "da": "Ventilations oscillation tilstand"
             },
             "example": {
               "en": "all",
-              "nl": "all"
+              "nl": "all",
+              "da": "Roter"
             }
           }
         ],
@@ -285,11 +313,13 @@
         "id": "when_air_conditioning_fan_oscillation_mode_became",
         "title": {
           "en": "When the fan oscillation mode became...",
-          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in..."
+          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in...",
+          "da": "Når Ventilations oscillation tilstand bliver..."
         },
         "titleFormatted": {
           "en": "When the fan oscillation mode became [[air_conditioning_fan_oscillation_mode]]",
-          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in [[air_conditioning_fan_oscillation_mode]]"
+          "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in [[air_conditioning_fan_oscillation_mode]]",
+          "da": "Når Ventilations oscillation tilstand bliver [[air_conditioning_fan_oscillation_mode]]"
         },
         "args": [
           {
@@ -302,35 +332,40 @@
             "name": "air_conditioning_fan_oscillation_mode",
             "title": {
               "en": "Pick a fan oscillation mode",
-              "nl": "Kies een Ventilator-oscillatiemodus"
+              "nl": "Kies een Ventilator-oscillatiemodus",
+              "da": "Vælg ventilations oscillation tilstand"
             },
             "values": [
               {
                 "id": "fixed",
                 "label": {
                   "en": "Fixed",
-                  "nl": "Vast"
+                  "nl": "Vast",
+                  "da": "Fast position"
                 }
               },
               {
                 "id": "all",
                 "label": {
                   "en": "All",
-                  "nl": "Allemaal"
+                  "nl": "Allemaal",
+                  "da": "Roter"
                 }
               },
               {
                 "id": "vertical",
                 "label": {
                   "en": "Vertical",
-                  "nl": "Verticaal"
+                  "nl": "Verticaal",
+                  "da": "Vertikal"
                 }
               },
               {
                 "id": "horizontal",
                 "label": {
                   "en": "Horizontal",
-                  "nl": "Horizontaal"
+                  "nl": "Horizontaal",
+                  "da": "Horisontal"
                 }
               }
             ]
@@ -342,11 +377,13 @@
             "name": "air_conditioning_fan_oscillation_mode",
             "title": {
               "en": "Fan oscillation mode",
-              "nl": "Ventilator-oscillatiemodus"
+              "nl": "Ventilator-oscillatiemodus",
+              "da": "Ventilations oscillation tilstand"
             },
             "example": {
               "en": "all",
-              "nl": "all"
+              "nl": "all",
+              "da": "Roter"
             }
           }
         ]
@@ -355,7 +392,7 @@
         "id": "dryer_job_state_changed",
         "title": {
           "en": "When the job changed",
-          "da": "Når programmet skifter"
+          "da": "Når opgaven skifter"
         },
         "tokens": [
           {
@@ -383,11 +420,11 @@
         "id": "when-the-dryer-job-became",
         "title": {
           "en": "When the job became...",
-          "da": "Når programmet bliver..."
+          "da": "Når opgaven bliver..."
         },
         "titleFormatted": {
           "en": "When the job became [[dryer_job_state]]",
-          "da": "Når programmet bliver [[dryer_job_state]]"
+          "da": "Når opgaven bliver [[dryer_job_state]]"
         },
         "args": [
           {
@@ -400,7 +437,7 @@
             "name": "dryer_job_state",
             "title": {
               "en": "Pick a job",
-              "da": "Vælg et program"
+              "da": "Vælg en opgave"
             },
             "values": [
               {
@@ -502,11 +539,12 @@
             "name": "dryer_job_state",
             "title": {
               "en": "Job",
-              "da": "Program"
+              "da": "Opgave"
             },
             "example": {
               "en": "finish",
-              "da": "stoppet"
+              "da": "stoppet",
+              "nl": "einde"
             }
           }
         ]
@@ -515,7 +553,8 @@
         "id": "dryer_machine_state_changed",
         "title": {
           "en": "When state changed",
-          "da": "Når status ændres"
+          "da": "Når status ændres",
+          "nl": "Wanneer de status verandert"
         },
         "tokens": [
           {
@@ -523,11 +562,13 @@
             "name": "dryer_machine_state",
             "title": {
               "en": "State",
-              "da": "Status"
+              "da": "Status",
+              "nl": "Status"
             },
             "example": {
               "en": "pause",
-              "da": "pause"
+              "da": "pause",
+              "nl": "pauze"
             }
           }
         ],
@@ -543,11 +584,13 @@
         "id": "when-the-dryer-state-became",
         "title": {
           "en": "When the state became...",
-          "da": "Når status bliver..."
+          "da": "Når status bliver...",
+          "nl": "Wanneer de status wordt in ..."
         },
         "titleFormatted": {
           "en": "When the state became [[dryer_machine_state]]",
-          "da": "Når status bliver [[dryer_machine_state]]"
+          "da": "Når status bliver [[dryer_machine_state]]",
+          "nl": "Wanneer de status wordt in [[dryer_machine_state]]"
         },
         "args": [
           {
@@ -560,28 +603,32 @@
             "name": "dryer_machine_state",
             "title": {
               "en": "Pick a state",
-              "da": "Vælg en status"
+              "da": "Vælg en status",
+              "nl": "Kies een status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
                   "en": "Paused",
-                  "da": "Pause"
+                  "da": "Pause",
+                  "nl": "Gepauzeerd"
                 }
               },
               {
                 "id": "run",
                 "label": {
                   "en": "Running",
-                  "da": "Kører"
+                  "da": "Kører",
+                  "nl": "Bezig"
                 }
               },
               {
                 "id": "stop",
                 "label": {
                   "en": "Stopped",
-                  "da": "Stoppet"
+                  "da": "Stoppet",
+                  "nl": "Gestopt"
                 }
               }
             ]
@@ -593,11 +640,13 @@
             "name": "dryer_machine_state",
             "title": {
               "en": "Machine State",
-              "da": "Maskine Status"
+              "da": "Maskine Status",
+              "nl": "Machine Status"
             },
             "example": {
               "en": "pause",
-              "da": "pause"
+              "da": "pause",
+              "nl": "pauze"
             }
           }
         ]
@@ -606,7 +655,8 @@
         "id": "washer_job_state_changed",
         "title": {
           "en": "the job changed",
-          "da": "Når programmet ændres"
+          "da": "Når tilstand ændres",
+          "nl": "de wascyclus veranderd"
         },
         "tokens": [
           {
@@ -614,11 +664,13 @@
             "name": "washer_job_state",
             "title": {
               "en": "Job",
-              "da": "Program"
+              "da": "Tilstand",
+              "nl": "Wascyclus"
             },
             "example": {
               "en": "finish",
-              "da": "stoppet"
+              "da": "stoppet",
+              "nl": "klaar"
             }
           }
         ],
@@ -634,11 +686,13 @@
         "id": "when-the-washer-job-became",
         "title": {
           "en": "the job became...",
-          "da": "Når programmet bliver..."
+          "da": "Når opgaven bliver...",
+          "nl": "de wascyclus wordt..."
         },
         "titleFormatted": {
           "en": "the job became [[washer_job_state]]",
-          "da": "Når programmet bliver [[washer_job_state]]"
+          "da": "Når opgaven bliver [[washer_job_state]]",
+          "nl": "de wascyclus wordt [[washer_job_state]]"
         },
         "args": [
           {
@@ -651,7 +705,8 @@
             "name": "washer_job_state",
             "title": {
               "en": "Pick a job",
-              "da": "Vælg et program"
+              "da": "Vælg et opgave",
+              "nl": "Kies een wascyclus"
             },
             "values": [
               {
@@ -759,11 +814,13 @@
             "name": "washer_job_state",
             "title": {
               "en": "Job",
-              "da": "Program"
+              "da": "Tilstand",
+              "nl": "Wascyclus"
             },
             "example": {
               "en": "finish",
-              "da": "stoppet"
+              "da": "stoppet",
+              "nl": "klaar"
             }
           }
         ]
@@ -772,7 +829,8 @@
         "id": "washer_machine_state_changed",
         "title": {
           "en": "state changed",
-          "da": "Når status ændres"
+          "da": "Når status ændres",
+          "nl": "de status veranderd"
         },
         "tokens": [
           {
@@ -780,11 +838,13 @@
             "name": "washer_machine_state",
             "title": {
               "en": "State",
-              "da": "Status"
+              "da": "Status",
+              "nl": "Status"
             },
             "example": {
               "en": "pause",
-              "da": "pause"
+              "da": "pause",
+              "nl": "pauze"
             }
           }
         ],
@@ -800,11 +860,13 @@
         "id": "when-the-washer-state-became",
         "title": {
           "en": "the state became...",
-          "da": "Når status bliver..."
+          "da": "Når status bliver...",
+          "nl": "de status wordt..."
         },
         "titleFormatted": {
           "en": "the state became [[washer_machine_state]]",
-          "da": "Når status bliver [[washer_machine_state]]"
+          "da": "Når status bliver [[washer_machine_state]]",
+          "nl": "de status wordt [[washer_machine_state]]"
         },
         "args": [
           {
@@ -817,28 +879,32 @@
             "name": "washer_machine_state",
             "title": {
               "en": "Pick a state",
-              "da": "Vælg en status"
+              "da": "Vælg en status",
+              "nl": "Kies een status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
                   "en": "Paused",
-                  "da": "Pause"
+                  "da": "Pause",
+                  "nl": "Pauze"
                 }
               },
               {
                 "id": "run",
                 "label": {
                   "en": "Running",
-                  "da": "Kører"
+                  "da": "Kører",
+                  "nl": "Bezig"
                 }
               },
               {
                 "id": "stop",
                 "label": {
                   "en": "Stopped",
-                  "da": "Stoppet"
+                  "da": "Stoppet",
+                  "nl": "Gestopt"
                 }
               }
             ]
@@ -850,11 +916,13 @@
             "name": "washer_machine_state",
             "title": {
               "en": "Machine State",
-              "da": "Maskine Status"
+              "da": "Maskine Status",
+              "nl": "Machine Status"
             },
             "example": {
               "en": "pause",
-              "da": "pause"
+              "da": "pause",
+              "nl": "pauze"
             }
           }
         ]
@@ -862,14 +930,18 @@
       {
         "id": "samsungce_washer_cycle_changed",
         "title": {
-          "en": "the washing program changed"
+          "en": "the washing program changed",
+          "da": "Når programmet ændres",
+          "nl": "het wasprogramma veranderd"
         },
         "tokens": [
           {
             "type": "string",
             "name": "samsungce_washer_cycle",
             "title": {
-              "en": "Washing Program"
+              "en": "Washing Program",
+              "da": "Program",
+              "nl": "Wascyclus"
             },
             "example": {
               "en": "Eco 40 - 60"
@@ -890,11 +962,13 @@
         "id": "air_conditioning_mode_is",
         "title": {
           "en": "It !{{is|isn't}} in mode...",
-          "nl": "!{{Is|Is niet}} in modus..."
+          "nl": "!{{Is|Is niet}} in modus...",
+          "da": "Det !{{er|er ikke}} i tilstand..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} in mode [[air_conditioning_mode]]",
-          "nl": "!{{Is|Is niet}} in modus [[air_conditioning_mode]]"
+          "nl": "!{{Is|Is niet}} in modus [[air_conditioning_mode]]",
+          "da": "Det !{{er|er ikke}} i tilstand [[air_conditioning_mode]]"
         },
         "args": [
           {
@@ -907,42 +981,48 @@
             "name": "air_conditioning_mode",
             "title": {
               "en": "Pick a mode",
-              "nl": "Kies een modus"
+              "nl": "Kies een modus",
+              "da": "Vælg en tilstand"
             },
             "values": [
               {
                 "id": "cool",
                 "label": {
                   "en": "Cool",
-                  "nl": "Koelen"
+                  "nl": "Koelen",
+                  "da": "Kold"
                 }
               },
               {
                 "id": "dry",
                 "label": {
                   "en": "Dry",
-                  "nl": "Drogen"
+                  "nl": "Drogen",
+                  "da": "Tør"
                 }
               },
               {
                 "id": "wind",
                 "label": {
                   "en": "Wind",
-                  "nl": "Wind"
+                  "nl": "Wind",
+                  "da": "Vind"
                 }
               },
               {
                 "id": "auto",
                 "label": {
                   "en": "Auto",
-                  "nl": "Automatisch"
+                  "nl": "Automatisch",
+                  "da": "Automatisk"
                 }
               },
               {
                 "id": "heat",
                 "label": {
                   "en": "Heat",
-                  "nl": "Verwarmen"
+                  "nl": "Verwarmen",
+                  "da": "Varm"
                 }
               }
             ]
@@ -953,11 +1033,13 @@
         "id": "air_conditioning_fan_mode_is",
         "title": {
           "en": "It !{{is|isn't}} in fan mode...",
-          "nl": "!{{Is|Is niet}} in ventilatiemodus..."
+          "nl": "!{{Is|Is niet}} in ventilatiemodus...",
+          "da": "Det !{{er|er ikke}} i ventilation tilstand..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} in fan mode [[air_conditioning_fan_mode]]",
-          "nl": "!{{Is|Is niet}} in ventilatiemodus [[air_conditioning_fan_mode]]"
+          "nl": "!{{Is|Is niet}} in ventilatiemodus [[air_conditioning_fan_mode]]",
+          "da": "Det !{{er|er ikke}} i ventilation tilstand [[air_conditioning_fan_mode]]"
         },
         "args": [
           {
@@ -970,42 +1052,48 @@
             "name": "air_conditioning_fan_mode",
             "title": {
               "en": "Pick a fan mode",
-              "nl": "Kies een ventilatiemodus"
+              "nl": "Kies een ventilatiemodus",
+              "da": "Vælg en tilstand"
             },
             "values": [
               {
                 "id": "auto",
                 "label": {
                   "en": "Auto",
-                  "nl": "Automatisch"
+                  "nl": "Automatisch",
+                  "da": "Automatisk"
                 }
               },
               {
                 "id": "low",
                 "label": {
                   "en": "Low",
-                  "nl": "Laag"
+                  "nl": "Laag",
+                  "da": "Lav"
                 }
               },
               {
                 "id": "medium",
                 "label": {
                   "en": "Medium",
-                  "nl": "Gemiddeld"
+                  "nl": "Gemiddeld",
+                  "da": "Mellem"
                 }
               },
               {
                 "id": "high",
                 "label": {
                   "en": "High",
-                  "nl": "Hoog"
+                  "nl": "Hoog",
+                  "da": "Høj"
                 }
               },
               {
                 "id": "turbo",
                 "label": {
                   "en": "Turbo",
-                  "nl": "Turbo"
+                  "nl": "Turbo",
+                  "da": "Turbo"
                 }
               }
             ]
@@ -1016,11 +1104,13 @@
         "id": "air_conditioning_fan_oscillation_mode_is",
         "title": {
           "en": "It !{{is|isn't}} in fan oscillation mode...",
-          "nl": "!{{Is|Is niet}} in Ventilator-oscillatiemodus..."
+          "nl": "!{{Is|Is niet}} in Ventilator-oscillatiemodus...",
+          "da": "Det !{{er|er ikke}} i ventilations oscillation tilstand..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} in fan oscillation mode [[air_conditioning_fan_oscillation_mode]]",
-          "nl": "!{{Is|Is niet}} in ventilator-oscillatiemodus [[air_conditioning_fan_oscillation_mode]]"
+          "nl": "!{{Is|Is niet}} in ventilator-oscillatiemodus [[air_conditioning_fan_oscillation_mode]]",
+          "da": "Det !{{er|er ikke}} i ventilations oscillation tilstand [[air_conditioning_fan_oscillation_mode]]"
         },
         "args": [
           {
@@ -1033,35 +1123,40 @@
             "name": "air_conditioning_fan_oscillation_mode",
             "title": {
               "en": "Pick a fan oscillation mode",
-              "nl": "Kies een ventilator-oscillatiemodus"
+              "nl": "Kies een ventilator-oscillatiemodus",
+              "da": "Vælg ventilation oscillation tilstand"
             },
             "values": [
               {
                 "id": "fixed",
                 "label": {
                   "en": "Fixed",
-                  "nl": "Vast"
+                  "nl": "Vast",
+                  "da": "Fast position"
                 }
               },
               {
                 "id": "all",
                 "label": {
                   "en": "All",
-                  "nl": "Allemaal"
+                  "nl": "Allemaal",
+                  "da": "Roter"
                 }
               },
               {
                 "id": "vertical",
                 "label": {
                   "en": "Vertical",
-                  "nl": "Verticaal"
+                  "nl": "Verticaal",
+                  "da": "Vertikal"
                 }
               },
               {
                 "id": "horizontal",
                 "label": {
                   "en": "Horizontal",
-                  "nl": "Horizontaal"
+                  "nl": "Horizontaal",
+                  "da": "Horisontal"
                 }
               }
             ]
@@ -1072,11 +1167,13 @@
         "id": "dryer-is-doing-job",
         "title": {
           "en": "It !{{is|isn't}} doing job...",
-          "da": "Det !{{kører|kører ikke}} programmet..."
+          "da": "Det !{{kører|kører ikke}} programmet...",
+          "nl": "Het !{{is|is niet}} bezig met de taak..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} doing job [[dryer_job_state]]",
-          "da": "Det !{{kører|kører ikke}} programmet [[dryer_job_state]]"
+          "da": "Det !{{kører|kører ikke}} programmet [[dryer_job_state]]",
+          "nl": "Het !{{is|is niet}} bezig met de taak [[dryer_job_state]]"
         },
         "args": [
           {
@@ -1089,7 +1186,8 @@
             "name": "dryer_job_state",
             "title": {
               "en": "Pick a job",
-              "da": "Vælg et program"
+              "da": "Vælg et program",
+              "nl": "Kies een taak"
             },
             "values": [
               {
@@ -1190,11 +1288,13 @@
         "id": "dryer-is-in-state",
         "title": {
           "en": "It !{{is|isn't}} in state...",
-          "da": "Det !{{er|er ikke}} i status..."
+          "da": "Det !{{er|er ikke}} i status...",
+          "nl": "Het !{{is|is niet}} in de status..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} in state [[dryer_machine_state]]",
-          "da": "Det !{{er|er ikke}} i status [[dryer_machine_state]]"
+          "da": "Det !{{er|er ikke}} i status [[dryer_machine_state]]",
+          "nl": "Het !{{is|is niet}} in de status [[dryer_machine_state]]"
         },
         "args": [
           {
@@ -1207,28 +1307,32 @@
             "name": "dryer_machine_state",
             "title": {
               "en": "Pick a state",
-              "da": "Vælg en status"
+              "da": "Vælg en status",
+              "nl": "Kies een status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
                   "en": "Paused",
-                  "da": "Pause"
+                  "da": "Pause",
+                  "nl": "Gepauzeerd"
                 }
               },
               {
                 "id": "run",
                 "label": {
                   "en": "Running",
-                  "da": "Kører"
+                  "da": "Kører",
+                  "nl": "Bezig"
                 }
               },
               {
                 "id": "stop",
                 "label": {
                   "en": "Stopped",
-                  "da": "Stoppet"
+                  "da": "Stoppet",
+                  "nl": "Gestopt"
                 }
               }
             ]
@@ -1239,11 +1343,13 @@
         "id": "is-doing-job",
         "title": {
           "en": "It !{{is|isn't}} doing job...",
-          "da": "Det !{{kører|kører ikke}} programmet..."
+          "da": "Det !{{kører|kører ikke}} opgave...",
+          "nl": "de wascyclus !{{is|isn't}} bezig..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} doing job [[washer_job_state]]",
-          "da": "Det !{{kører|kører ikke}} programmet [[washer_job_state]]"
+          "da": "Det !{{kører|kører ikke}} opgave [[washer_job_state]]",
+          "nl": "de wascyclus !{{is|isn't}} bezig [[washer_job_state]]"
         },
         "args": [
           {
@@ -1256,7 +1362,8 @@
             "name": "washer_job_state",
             "title": {
               "en": "Pick a job",
-              "da": "Vælg et program"
+              "da": "Vælg en opgave",
+              "nl": "Kies een wascyclus"
             },
             "values": [
               {
@@ -1363,11 +1470,13 @@
         "id": "is-in-state",
         "title": {
           "en": "It !{{is|isn't}} in state...",
-          "da": "Det !{{er|er ikke}} i status..."
+          "da": "Det !{{er|er ikke}} i status...",
+          "nl": "de status !{{is|isn't}}..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} in state [[washer_machine_state]]",
-          "da": "Det !{{er|er ikke}} i status [[washer_machine_state]]"
+          "da": "Det !{{er|er ikke}} i status [[washer_machine_state]]",
+          "nl": "de status !{{is|isn't}} [[washer_machine_state]]"
         },
         "args": [
           {
@@ -1380,28 +1489,32 @@
             "name": "washer_machine_state",
             "title": {
               "en": "Pick a state",
-              "da": "Vælg en status"
+              "da": "Vælg en status",
+              "nl": "Kies een status"
             },
             "values": [
               {
                 "id": "pause",
                 "label": {
                   "en": "Paused",
-                  "da": "Pause"
+                  "da": "Pause",
+                  "nl": "Pauze"
                 }
               },
               {
                 "id": "run",
                 "label": {
                   "en": "Running",
-                  "da": "Kører"
+                  "da": "Kører",
+                  "nl": "Bezig"
                 }
               },
               {
                 "id": "stop",
                 "label": {
                   "en": "Stopped",
-                  "da": "Stoppet"
+                  "da": "Stoppet",
+                  "nl": "Gestopt"
                 }
               }
             ]
@@ -1414,11 +1527,13 @@
         "id": "set_air_conditioning_mode",
         "title": {
           "en": "Set mode to...",
-          "nl": "Zet modus op..."
+          "nl": "Zet modus op...",
+          "da": "Sæt tilstand til..."
         },
         "titleFormatted": {
           "en": "Set mode to [[air_conditioning_mode]]",
-          "nl": "Zet modus op [[air_conditioning_mode]]"
+          "nl": "Zet modus op [[air_conditioning_mode]]",
+          "da": "Sæt tilstand til [[air_conditioning_mode]]"
         },
         "args": [
           {
@@ -1431,42 +1546,48 @@
             "name": "air_conditioning_mode",
             "title": {
               "en": "Pick a mode",
-              "nl": "Kies een modus"
+              "nl": "Kies een modus",
+              "da": "Vælg en tilstand"
             },
             "values": [
               {
                 "id": "cool",
                 "label": {
                   "en": "Cool",
-                  "nl": "Koelen"
+                  "nl": "Koelen",
+                  "da": "Kold"
                 }
               },
               {
                 "id": "dry",
                 "label": {
                   "en": "Dry",
-                  "nl": "Drogen"
+                  "nl": "Drogen",
+                  "da": "Tør"
                 }
               },
               {
                 "id": "wind",
                 "label": {
                   "en": "Wind",
-                  "nl": "Wind"
+                  "nl": "Wind",
+                  "da": "Vind"
                 }
               },
               {
                 "id": "auto",
                 "label": {
                   "en": "Auto",
-                  "nl": "Automatisch"
+                  "nl": "Automatisch",
+                  "da": "Automatisk"
                 }
               },
               {
                 "id": "heat",
                 "label": {
                   "en": "Heat",
-                  "nl": "Verwarmen"
+                  "nl": "Verwarmen",
+                  "da": "Varm"
                 }
               }
             ]
@@ -1477,11 +1598,13 @@
         "id": "set_air_conditioning_fan_mode",
         "title": {
           "en": "Set fan mode to...",
-          "nl": "Zet ventilatiemodus op..."
+          "nl": "Zet ventilatiemodus op...",
+          "da": "Sæt ventilations tilstand til..."
         },
         "titleFormatted": {
           "en": "Set fan mode to [[air_conditioning_fan_mode]]",
-          "nl": "Zet ventilatiemodus op [[air_conditioning_fan_mode]]"
+          "nl": "Zet ventilatiemodus op [[air_conditioning_fan_mode]]",
+          "da": "Sæt ventilations tilstand til [[air_conditioning_fan_mode]]"
         },
         "args": [
           {
@@ -1494,42 +1617,48 @@
             "name": "air_conditioning_fan_mode",
             "title": {
               "en": "Pick a fan mode",
-              "nl": "Kies een ventilatiemodus"
+              "nl": "Kies een ventilatiemodus",
+              "da": "Vælg ventilations tilstand"
             },
             "values": [
               {
                 "id": "auto",
                 "label": {
                   "en": "Auto",
-                  "nl": "Automatisch"
+                  "nl": "Automatisch",
+                  "da": "Automatisk"
                 }
               },
               {
                 "id": "low",
                 "label": {
                   "en": "Low",
-                  "nl": "Laag"
+                  "nl": "Laag",
+                  "da": "Lav"
                 }
               },
               {
                 "id": "medium",
                 "label": {
                   "en": "Medium",
-                  "nl": "Gemiddeld"
+                  "nl": "Gemiddeld",
+                  "da": "Mellem"
                 }
               },
               {
                 "id": "high",
                 "label": {
                   "en": "High",
-                  "nl": "Hoog"
+                  "nl": "Hoog",
+                  "da": "Høj"
                 }
               },
               {
                 "id": "turbo",
                 "label": {
                   "en": "Turbo",
-                  "nl": "Turbo"
+                  "nl": "Turbo",
+                  "da": "Turbo"
                 }
               }
             ]
@@ -1540,11 +1669,13 @@
         "id": "set_air_conditioning_fan_oscillation_mode",
         "title": {
           "en": "Set fan oscillation mode to...",
-          "nl": "Zet ventilator-oscillatiemodus op..."
+          "nl": "Zet ventilator-oscillatiemodus op...",
+          "da": "Sæt Ventilations oscillation tilstand til..."
         },
         "titleFormatted": {
           "en": "Set fan oscillationmode to [[air_conditioning_fan_oscillation_mode]]",
-          "nl": "Zet ventilator-oscillatiemodus op [[air_conditioning_fan_oscillation_mode]]"
+          "nl": "Zet ventilator-oscillatiemodus op [[air_conditioning_fan_oscillation_mode]]",
+          "da": "Sæt Ventilations oscillation tilstand til [[air_conditioning_fan_oscillation_mode]]"
         },
         "args": [
           {
@@ -1564,28 +1695,32 @@
                 "id": "fixed",
                 "label": {
                   "en": "Fixed",
-                  "nl": "Vast"
+                  "nl": "Vast",
+                  "da": "Fast position"
                 }
               },
               {
                 "id": "all",
                 "label": {
                   "en": "All",
-                  "nl": "Allemaal"
+                  "nl": "Allemaal",
+                  "da": "Roter"
                 }
               },
               {
                 "id": "vertical",
                 "label": {
                   "en": "Vertical",
-                  "nl": "Verticaal"
+                  "nl": "Verticaal",
+                  "da": "Vertikal"
                 }
               },
               {
                 "id": "horizontal",
                 "label": {
                   "en": "Horizontal",
-                  "nl": "Horizontaal"
+                  "nl": "Horizontaal",
+                  "da": "Horisontal"
                 }
               }
             ]
@@ -1595,7 +1730,9 @@
       {
         "id": "set-washing-program",
         "title": {
-          "en": "set washing program"
+          "en": "set washing program",
+          "da": "sæt program",
+          "nl": "zet wascyclus"
         },
         "args": [
           {
@@ -1607,7 +1744,9 @@
             "type": "autocomplete",
             "name": "program",
             "placeholder": {
-              "en": "Choose program"
+              "en": "Choose program",
+              "da": "Vælg program",
+              "nl": "Kies wascyclus"
             }
           }
         ]
@@ -1615,7 +1754,9 @@
       {
         "id": "set-washer-machine-state",
         "title": {
-          "en": "Set machine state"
+          "en": "Set machine state",
+          "da": "Sæt maskine status",
+          "nl": "Zet machine status"
         },
         "args": [
           {
@@ -1630,19 +1771,25 @@
               {
                 "id": "pause",
                 "label": {
-                  "en": "Pause"
+                  "en": "Pause",
+                  "da": "Pause",
+                  "nl": "Pauze"
                 }
               },
               {
                 "id": "run",
                 "label": {
-                  "en": "Run"
+                  "en": "Run",
+                  "da": "Kør",
+                  "nl": "Start"
                 }
               },
               {
                 "id": "stop",
                 "label": {
-                  "en": "Stop"
+                  "en": "Stop",
+                  "da": "Stop",
+                  "nl": "Stop"
                 }
               }
             ]
@@ -1655,7 +1802,8 @@
     {
       "name": {
         "en": "Air Conditioning",
-        "nl": "Airco"
+        "nl": "Airco",
+        "da": "Air Conditioning"
       },
       "class": "thermostat",
       "icon": "/drivers/air_conditioning/assets/icon.svg",
@@ -1701,7 +1849,8 @@
     {
       "name": {
         "en": "Dryer",
-        "da": "Tørretumbler"
+        "da": "Tørretumbler",
+        "nl": "Droger"
       },
       "class": "other",
       "icon": "/drivers/dryer/assets/icon.svg",
@@ -1745,7 +1894,8 @@
     {
       "name": {
         "en": "Washer",
-        "da": "Vaskemaskine"
+        "da": "Vaskemaskine",
+        "de": "Waschmaschine"
       },
       "class": "other",
       "icon": "/drivers/washer/assets/icon.svg",
@@ -1793,7 +1943,8 @@
       "type": "enum",
       "title": {
         "en": "Fan mode",
-        "nl": "Ventilator modus"
+        "nl": "Ventilator modus",
+        "da": "Ventilator tilstand"
       },
       "getable": true,
       "setable": true,
@@ -1803,35 +1954,40 @@
           "id": "auto",
           "title": {
             "en": "Auto",
-            "nl": "Automatisch"
+            "nl": "Automatisch",
+            "da": "Automatisk"
           }
         },
         {
           "id": "low",
           "title": {
             "en": "Low",
-            "nl": "Laag"
+            "nl": "Laag",
+            "da": "Lav"
           }
         },
         {
           "id": "medium",
           "title": {
             "en": "Medium",
-            "nl": "Gemiddeld"
+            "nl": "Gemiddeld",
+            "da": "Mellem"
           }
         },
         {
           "id": "high",
           "title": {
             "en": "High",
-            "nl": "Hoog"
+            "nl": "Hoog",
+            "da": "Høj"
           }
         },
         {
           "id": "turbo",
           "title": {
             "en": "Turbo",
-            "nl": "Turbo"
+            "nl": "Turbo",
+            "da": "Turbo"
           }
         }
       ]
@@ -1840,7 +1996,8 @@
       "type": "enum",
       "title": {
         "en": "Fan oscillation mode",
-        "nl": "Ventilator-oscillatiemodus"
+        "nl": "Ventilator-oscillatiemodus",
+        "da": "Ventilations oscillation tilstand"
       },
       "getable": true,
       "setable": true,
@@ -1850,28 +2007,32 @@
           "id": "fixed",
           "title": {
             "en": "Fixed",
-            "nl": "Vast"
+            "nl": "Vast",
+            "da": "Fast position"
           }
         },
         {
           "id": "all",
           "title": {
             "en": "All",
-            "nl": "Allemaal"
+            "nl": "Allemaal",
+            "da": "Roter"
           }
         },
         {
           "id": "vertical",
           "title": {
             "en": "Vertical",
-            "nl": "Verticaal"
+            "nl": "Verticaal",
+            "da": "Vertikal"
           }
         },
         {
           "id": "horizontal",
           "title": {
             "en": "Horizontal",
-            "nl": "Horizontaal"
+            "nl": "Horizontaal",
+            "da": "Horisontal"
           }
         }
       ]
@@ -1880,7 +2041,8 @@
       "type": "enum",
       "title": {
         "en": "Mode",
-        "nl": "Modus"
+        "nl": "Modus",
+        "da": "Tilstand"
       },
       "getable": true,
       "setable": true,
@@ -1890,35 +2052,40 @@
           "id": "cool",
           "title": {
             "en": "Cool",
-            "nl": "Koelen"
+            "nl": "Koelen",
+            "da": "Kold"
           }
         },
         {
           "id": "dry",
           "title": {
             "en": "Dry",
-            "nl": "Drogen"
+            "nl": "Drogen",
+            "da": "Tør"
           }
         },
         {
           "id": "wind",
           "title": {
             "en": "Wind",
-            "nl": "Wind"
+            "nl": "Wind",
+            "da": "Vind"
           }
         },
         {
           "id": "auto",
           "title": {
             "en": "Auto",
-            "nl": "Automatisch"
+            "nl": "Automatisch",
+            "da": "Automatisk"
           }
         },
         {
           "id": "heat",
           "title": {
             "en": "Heat",
-            "nl": "Verwarmen"
+            "nl": "Verwarmen",
+            "da": "Varm"
           }
         }
       ]
@@ -1926,7 +2093,8 @@
     "dryer_job_state": {
       "type": "enum",
       "title": {
-        "en": "Job"
+        "en": "Job",
+        "da": "Opgave"
       },
       "getable": true,
       "setable": false,
@@ -2028,7 +2196,8 @@
     "dryer_machine_state": {
       "type": "enum",
       "title": {
-        "en": "Machine"
+        "en": "Machine",
+        "da": "Maskine"
       },
       "getable": true,
       "setable": false,
@@ -2039,21 +2208,24 @@
           "id": "pause",
           "title": {
             "en": "Paused",
-            "da": "Pause"
+            "da": "Pause",
+            "nl": "Gepauzeerd"
           }
         },
         {
           "id": "run",
           "title": {
             "en": "Running",
-            "da": "Kører"
+            "da": "Kører",
+            "nl": "Aan"
           }
         },
         {
           "id": "stop",
           "title": {
             "en": "Stopped",
-            "da": "Stoppet"
+            "da": "Stoppet",
+            "nl": "Uit"
           }
         }
       ]
@@ -2061,7 +2233,8 @@
     "samsungce_washer_cycle": {
       "type": "string",
       "title": {
-        "en": "Washing Program"
+        "en": "Washing Program",
+        "da": "Vaskeprogram"
       },
       "icon": "/assets/icons/shirt.svg",
       "uiComponent": "sensor",
@@ -2071,7 +2244,8 @@
     "washer_job_state": {
       "type": "enum",
       "title": {
-        "en": "Job"
+        "en": "Job",
+        "da": "Opgave"
       },
       "getable": true,
       "setable": false,
@@ -2179,7 +2353,8 @@
     "washer_machine_state": {
       "type": "enum",
       "title": {
-        "en": "Machine"
+        "en": "Machine",
+        "da": "Maskine"
       },
       "getable": true,
       "setable": false,
@@ -2190,21 +2365,24 @@
           "id": "pause",
           "title": {
             "en": "Paused",
-            "da": "Pause"
+            "da": "Pause",
+            "nl": "Gepauzeerd"
           }
         },
         {
           "id": "run",
           "title": {
             "en": "Running",
-            "da": "Kører"
+            "da": "Kører",
+            "nl": "Aan"
           }
         },
         {
           "id": "stop",
           "title": {
             "en": "Stopped",
-            "da": "Stoppet"
+            "da": "Stoppet",
+            "nl": "Uit"
           }
         }
       ]
