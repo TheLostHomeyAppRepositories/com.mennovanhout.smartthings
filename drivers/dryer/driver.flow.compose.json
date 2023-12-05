@@ -4,7 +4,7 @@
       "id": "dryer_job_state_changed",
       "title": {
         "en": "When the job changed",
-        "da": "Når programmet skifter"
+        "da": "Når opgaven skifter"
       },
       "tokens": [
         {
@@ -25,11 +25,11 @@
       "id": "when-the-dryer-job-became",
       "title": {
         "en": "When the job became...",
-        "da": "Når programmet bliver..."
+        "da": "Når opgaven bliver..."
       },
       "titleFormatted": {
         "en": "When the job became [[dryer_job_state]]",
-        "da": "Når programmet bliver [[dryer_job_state]]"
+        "da": "Når opgaven bliver [[dryer_job_state]]"
       },
       "args": [
         {
@@ -37,7 +37,7 @@
           "name": "dryer_job_state",
           "title": {
             "en": "Pick a job",
-            "da": "Vælg et program"
+            "da": "Vælg en opgave"
           },
           "values": [
             { "id": "cooling", "label": { "en": "Cooling" }},
@@ -64,7 +64,7 @@
           "name": "dryer_job_state",
           "title": {
             "en": "Job",
-            "da": "Program"
+            "da": "Opgave"
           },
           "example": {
             "en": "finish",

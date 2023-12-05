@@ -1,7 +1,8 @@
 {
   "name": {
     "en": "Air Conditioning",
-    "nl": "Airco"
+    "nl": "Airco",
+    "da": "Air Conditioning"
   },
   "class": "thermostat",
   "icon": "{{driverAssetsPath}}/icon.svg",

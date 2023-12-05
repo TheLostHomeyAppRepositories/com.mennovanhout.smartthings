@@ -1,6 +1,6 @@
 {
   "type": "enum",
-  "title": {"en":  "Job"},
+  "title": {"en":  "Job", "da": "Opgave"},
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",

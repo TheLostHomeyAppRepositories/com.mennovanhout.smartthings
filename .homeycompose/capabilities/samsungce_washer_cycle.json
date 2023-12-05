@@ -1,7 +1,8 @@
 {
   "type": "string",
   "title": {
-    "en": "Washing Program"
+    "en": "Washing Program",
+    "da": "Vaskeprogram"
   },
   "icon": "/assets/icons/shirt.svg",
   "uiComponent": "sensor",

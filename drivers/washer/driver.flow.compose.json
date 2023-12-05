@@ -4,8 +4,8 @@
       "id": "washer_job_state_changed",
       "title": {
         "en": "the job changed",
-        "da": "Når programmet ændres",
-        "nl": "de wascyclus veranderd",
+        "da": "Når tilstand ændres",
+        "nl": "de wascyclus veranderd"
       },
       "tokens": [
         {
@@ -13,13 +13,13 @@
           "name": "washer_job_state",
           "title": {
             "en": "Job",
-            "da": "Program",
-            "nl": "Wascyclus",
+            "da": "Tilstand",
+            "nl": "Wascyclus"
           },
           "example": {
             "en": "finish",
             "da": "stoppet",
-            "nl": "klaar",
+            "nl": "klaar"
           }
         }
       ]
@@ -28,13 +28,13 @@
       "id": "when-the-washer-job-became",
       "title": {
         "en": "the job became...",
-        "da": "Når programmet bliver...",
-        "nl": "de wascyclus wordt...",
+        "da": "Når opgaven bliver...",
+        "nl": "de wascyclus wordt..."
       },
       "titleFormatted": {
         "en": "the job became [[washer_job_state]]",
-        "da": "Når programmet bliver [[washer_job_state]]",
-        "nl": "de wascyclus wordt [[washer_job_state]]",
+        "da": "Når opgaven bliver [[washer_job_state]]",
+        "nl": "de wascyclus wordt [[washer_job_state]]"
       },
       "args": [
         {
@@ -42,7 +42,7 @@
           "name": "washer_job_state",
           "title": {
             "en": "Pick a job",
-            "da": "Vælg et program",
+            "da": "Vælg et opgave",
             "nl": "Kies een wascyclus"
           },
           "values": [
@@ -151,8 +151,8 @@
           "name": "washer_job_state",
           "title": {
             "en": "Job",
-            "da": "Program",
-            "nl": "Wascyclus",
+            "da": "Tilstand",
+            "nl": "Wascyclus"
           },
           "example": {
             "en": "finish",
@@ -280,12 +280,12 @@
       "id": "is-doing-job",
       "title": {
         "en": "It !{{is|isn't}} doing job...",
-        "da": "Det !{{kører|kører ikke}} programmet...",
+        "da": "Det !{{kører|kører ikke}} opgave...",
         "nl": "de wascyclus !{{is|isn't}} bezig..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} doing job [[washer_job_state]]",
-        "da": "Det !{{kører|kører ikke}} programmet [[washer_job_state]]",
+        "da": "Det !{{kører|kører ikke}} opgave [[washer_job_state]]",
         "nl": "de wascyclus !{{is|isn't}} bezig [[washer_job_state]]"
       },
       "args": [
@@ -294,7 +294,7 @@
           "name": "washer_job_state",
           "title": {
             "en": "Pick a job",
-            "da": "Vælg et program",
+            "da": "Vælg en opgave",
             "nl": "Kies een wascyclus"
           },
           "values": [

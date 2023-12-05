@@ -4,7 +4,8 @@
       "id": "air_conditioning_mode_changed",
       "title": {
         "en": "When the mode changed",
-        "nl": "Wanneer modus is veranderd"
+        "nl": "Wanneer modus is veranderd",
+        "da": "Når tilstand ændres"
       },
       "tokens": [
         {
@@ -12,11 +13,13 @@
           "name": "air_conditioning_mode",
           "title": {
             "en": "Mode",
-            "nl": "Modus"
+            "nl": "Modus",
+            "da": "Tilstand"
           },
           "example": {
             "en": "cool",
-            "nl": "cool"
+            "nl": "cool",
+            "da": "kold"
           }
         }
       ]
@@ -25,11 +28,13 @@
       "id": "when_air_conditioning_mode_became",
       "title": {
         "en": "When the mode became...",
-        "nl": "Wanneer modus is veranderd in..."
+        "nl": "Wanneer modus is veranderd in...",
+        "da": "Når tilstand ændres..."
       },
       "titleFormatted": {
         "en": "When the mode became [[air_conditioning_mode]]",
-        "nl": "Wanneer modus is veranderd in [[air_conditioning_mode]]"
+        "nl": "Wanneer modus is veranderd in [[air_conditioning_mode]]",
+        "da": "Når tilstand bliver [[air_conditioning_mode]]"
       },
       "args": [
         {
@@ -37,14 +42,15 @@
           "name": "air_conditioning_mode",
           "title": {
             "en": "Pick a mode",
-            "nl": "Kies een modus"
+            "nl": "Kies een modus",
+            "da": "Vælg en tilstand"
           },
           "values": [
-            { "id": "cool", "label": { "en": "Cool", "nl": "Koelen" }},
-            { "id": "dry", "label": { "en": "Dry", "nl": "Drogen" }},
-            { "id": "wind", "label": { "en": "Wind", "nl": "Wind" }},
-            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch" }},
-            { "id": "heat", "label": { "en": "Heat", "nl": "Verwarmen" }}
+            { "id": "cool", "label": { "en": "Cool", "nl": "Koelen", "da": "Kold" }},
+            { "id": "dry", "label": { "en": "Dry", "nl": "Drogen", "da": "Tør" }},
+            { "id": "wind", "label": { "en": "Wind", "nl": "Wind", "da": "Vind" }},
+            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+            { "id": "heat", "label": { "en": "Heat", "nl": "Verwarmen", "da": "Varm" }}
           ]
         }
       ],
@@ -54,11 +60,13 @@
           "name": "air_conditioning_mode",
           "title": {
             "en": "Mode",
-            "nl": "Modus"
+            "nl": "Modus",
+            "da": "Tilstand"
           },
           "example": {
             "en": "cool",
-            "nl": "cool"
+            "nl": "cool",
+            "da": "kold"
           }
         }
       ]
@@ -67,7 +75,8 @@
       "id": "air_conditioning_fan_mode_changed",
       "title": {
         "en": "When the fan mode changed",
-        "nl": "Wanneer verntialtie modus is veranderd"
+        "nl": "Wanneer verntialtie modus is veranderd",
+        "da": "Når ventilator tilstand ændres"
       },
       "tokens": [
         {
@@ -75,11 +84,13 @@
           "name": "air_conditioning_fan_mode",
           "title": {
             "en": "Fan mode",
-            "nl": "Vertilatie modus"
+            "nl": "Vertilatie modus",
+            "da": "Ventilator tilstand"
           },
           "example": {
             "en": "auto",
-            "nl": "auto"
+            "nl": "auto",
+            "da": "automatisk"
           }
         }
       ]
@@ -88,11 +99,13 @@
       "id": "when_air_conditioning_fan_mode_became",
       "title": {
         "en": "When the fan mode became...",
-        "nl": "Wanneer ventilatiemodus is veranderd in..."
+        "nl": "Wanneer ventilatiemodus is veranderd in...",
+        "da": "Når ventilator tilstand bliver..."
       },
       "titleFormatted": {
         "en": "When the fan mode became [[air_conditioning_fan_mode]]",
-        "nl": "Wanneer ventilatiemodus is veranderd in [[air_conditioning_fan_mode]]"
+        "nl": "Wanneer ventilatiemodus is veranderd in [[air_conditioning_fan_mode]]",
+        "da": "Når ventilator tilstand bliver [[air_conditioning_fan_mode]]"
       },
       "args": [
         {
@@ -103,11 +116,11 @@
             "nl": "Kies een ventilatiemodus"
           },
           "values": [
-            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch" }},
-            { "id": "low", "label": { "en": "Low", "nl": "Laag" }},
-            { "id": "medium", "label": { "en": "Medium", "nl": "Gemiddeld" }},
-            { "id": "high", "label": { "en": "High", "nl": "Hoog" }},
-            { "id": "turbo", "label": { "en": "Turbo", "nl": "Turbo" }}
+            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+            { "id": "low", "label": { "en": "Low", "nl": "Laag", "da": "Lav" }},
+            { "id": "medium", "label": { "en": "Medium", "nl": "Gemiddeld", "da": "Mellem" }},
+            { "id": "high", "label": { "en": "High", "nl": "Hoog", "da": "Høj" }},
+            { "id": "turbo", "label": { "en": "Turbo", "nl": "Turbo", "da": "Turbo" }}
           ]
         }
       ],
@@ -117,11 +130,13 @@
           "name": "air_conditioning_fan_mode",
           "title": {
             "en": "Fan mode",
-            "nl": "ventilatiemodus"
+            "nl": "ventilatiemodus",
+            "da": "Ventilator tilstand"
           },
           "example": {
             "en": "auto",
-            "nl": "auto"
+            "nl": "auto",
+            "da": "automatisk"
           }
         }
       ]
@@ -130,7 +145,8 @@
       "id": "air_conditioning_fan_oscillation_mode_changed",
       "title": {
         "en": "When the fan oscillation mode changed",
-        "nl": "Wanneer Ventilator-oscillatiemodus is veranderd"
+        "nl": "Wanneer Ventilator-oscillatiemodus is veranderd",
+        "da": "Når Ventilations oscillation tilstand ændres"
       },
       "tokens": [
         {
@@ -138,11 +154,13 @@
           "name": "air_conditioning_fan_oscillation_mode",
           "title": {
             "en": "Fan oscillation mode",
-            "nl": "Ventilator-oscillatiemodus"
+            "nl": "Ventilator-oscillatiemodus",
+            "da": "Ventilations oscillation tilstand"
           },
           "example": {
             "en": "all",
-            "nl": "all"
+            "nl": "all",
+            "da": "Roter"
           }
         }
       ]
@@ -151,11 +169,13 @@
       "id": "when_air_conditioning_fan_oscillation_mode_became",
       "title": {
         "en": "When the fan oscillation mode became...",
-        "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in..."
+        "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in...",
+        "da": "Når Ventilations oscillation tilstand bliver..."
       },
       "titleFormatted": {
         "en": "When the fan oscillation mode became [[air_conditioning_fan_oscillation_mode]]",
-        "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in [[air_conditioning_fan_oscillation_mode]]"
+        "nl": "Wanneer Ventilator-oscillatiemodus is veranderd in [[air_conditioning_fan_oscillation_mode]]",
+        "da": "Når Ventilations oscillation tilstand bliver [[air_conditioning_fan_oscillation_mode]]"
       },
       "args": [
         {
@@ -163,13 +183,14 @@
           "name": "air_conditioning_fan_oscillation_mode",
           "title": {
             "en": "Pick a fan oscillation mode",
-            "nl": "Kies een Ventilator-oscillatiemodus"
+            "nl": "Kies een Ventilator-oscillatiemodus",
+            "da": "Vælg ventilations oscillation tilstand"
           },
           "values": [
-            { "id": "fixed", "label": { "en": "Fixed", "nl": "Vast" }},
-            { "id": "all", "label": { "en": "All", "nl": "Allemaal" }},
-            { "id": "vertical", "label": { "en": "Vertical", "nl": "Verticaal" }},
-            { "id": "horizontal", "label": { "en": "Horizontal", "nl": "Horizontaal" }}
+            { "id": "fixed", "label": { "en": "Fixed", "nl": "Vast", "da": "Fast position" }},
+            { "id": "all", "label": { "en": "All", "nl": "Allemaal", "da": "Roter" }},
+            { "id": "vertical", "label": { "en": "Vertical", "nl": "Verticaal",  "da": "Vertikal" }},
+            { "id": "horizontal", "label": { "en": "Horizontal", "nl": "Horizontaal", "da": "Horisontal" }}
           ]
         }
       ],
@@ -179,11 +200,13 @@
           "name": "air_conditioning_fan_oscillation_mode",
           "title": {
             "en": "Fan oscillation mode",
-            "nl": "Ventilator-oscillatiemodus"
+            "nl": "Ventilator-oscillatiemodus",
+            "da": "Ventilations oscillation tilstand"
           },
           "example": {
             "en": "all",
-            "nl": "all"
+            "nl": "all",
+            "da": "Roter"
           }
         }
       ]
@@ -194,11 +217,13 @@
       "id": "air_conditioning_mode_is",
       "title": {
         "en": "It !{{is|isn't}} in mode...",
-        "nl": "!{{Is|Is niet}} in modus..."
+        "nl": "!{{Is|Is niet}} in modus...",
+        "da": "Det !{{er|er ikke}} i tilstand..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} in mode [[air_conditioning_mode]]",
-        "nl": "!{{Is|Is niet}} in modus [[air_conditioning_mode]]"
+        "nl": "!{{Is|Is niet}} in modus [[air_conditioning_mode]]",
+        "da": "Det !{{er|er ikke}} i tilstand [[air_conditioning_mode]]"
       },
       "args": [
         {
@@ -206,14 +231,15 @@
           "name": "air_conditioning_mode",
           "title": {
             "en": "Pick a mode",
-            "nl": "Kies een modus"
+            "nl": "Kies een modus",
+            "da": "Vælg en tilstand"
           },
           "values": [
-            { "id": "cool", "label": { "en": "Cool", "nl": "Koelen" }},
-            { "id": "dry", "label": { "en": "Dry", "nl": "Drogen" }},
-            { "id": "wind", "label": { "en": "Wind", "nl": "Wind" }},
-            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch" }},
-            { "id": "heat", "label": { "en": "Heat", "nl": "Verwarmen" }}
+            { "id": "cool", "label": { "en": "Cool", "nl": "Koelen", "da": "Kold" }},
+            { "id": "dry", "label": { "en": "Dry", "nl": "Drogen", "da": "Tør" }},
+            { "id": "wind", "label": { "en": "Wind", "nl": "Wind", "da": "Vind" }},
+            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+            { "id": "heat", "label": { "en": "Heat", "nl": "Verwarmen", "da": "Varm" }}
           ]
         }
       ]
@@ -222,11 +248,13 @@
       "id": "air_conditioning_fan_mode_is",
       "title": {
         "en": "It !{{is|isn't}} in fan mode...",
-        "nl": "!{{Is|Is niet}} in ventilatiemodus..."
+        "nl": "!{{Is|Is niet}} in ventilatiemodus...",
+        "da": "Det !{{er|er ikke}} i ventilation tilstand..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} in fan mode [[air_conditioning_fan_mode]]",
-        "nl": "!{{Is|Is niet}} in ventilatiemodus [[air_conditioning_fan_mode]]"
+        "nl": "!{{Is|Is niet}} in ventilatiemodus [[air_conditioning_fan_mode]]",
+        "da": "Det !{{er|er ikke}} i ventilation tilstand [[air_conditioning_fan_mode]]"
       },
       "args": [
         {
@@ -234,14 +262,15 @@
           "name": "air_conditioning_fan_mode",
           "title": {
             "en": "Pick a fan mode",
-            "nl": "Kies een ventilatiemodus"
+            "nl": "Kies een ventilatiemodus",
+            "da": "Vælg en tilstand"
           },
           "values": [
-            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch" }},
-            { "id": "low", "label": { "en": "Low", "nl": "Laag" }},
-            { "id": "medium", "label": { "en": "Medium", "nl": "Gemiddeld" }},
-            { "id": "high", "label": { "en": "High", "nl": "Hoog" }},
-            { "id": "turbo", "label": { "en": "Turbo", "nl": "Turbo" }}
+            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+            { "id": "low", "label": { "en": "Low", "nl": "Laag", "da": "Lav" }},
+            { "id": "medium", "label": { "en": "Medium", "nl": "Gemiddeld", "da": "Mellem" }},
+            { "id": "high", "label": { "en": "High", "nl": "Hoog", "da": "Høj" }},
+            { "id": "turbo", "label": { "en": "Turbo", "nl": "Turbo", "da": "Turbo" }}
           ]
         }
       ]
@@ -250,11 +279,13 @@
       "id": "air_conditioning_fan_oscillation_mode_is",
       "title": {
         "en": "It !{{is|isn't}} in fan oscillation mode...",
-        "nl": "!{{Is|Is niet}} in Ventilator-oscillatiemodus..."
+        "nl": "!{{Is|Is niet}} in Ventilator-oscillatiemodus...",
+        "da": "Det !{{er|er ikke}} i ventilations oscillation tilstand..."
       },
       "titleFormatted": {
         "en": "It !{{is|isn't}} in fan oscillation mode [[air_conditioning_fan_oscillation_mode]]",
-        "nl": "!{{Is|Is niet}} in ventilator-oscillatiemodus [[air_conditioning_fan_oscillation_mode]]"
+        "nl": "!{{Is|Is niet}} in ventilator-oscillatiemodus [[air_conditioning_fan_oscillation_mode]]",
+        "da": "Det !{{er|er ikke}} i ventilations oscillation tilstand [[air_conditioning_fan_oscillation_mode]]"
       },
       "args": [
         {
@@ -262,13 +293,14 @@
           "name": "air_conditioning_fan_oscillation_mode",
           "title": {
             "en": "Pick a fan oscillation mode",
-            "nl": "Kies een ventilator-oscillatiemodus"
+            "nl": "Kies een ventilator-oscillatiemodus",
+            "da": "Vælg ventilation oscillation tilstand"
           },
           "values": [
-            { "id": "fixed", "label": { "en": "Fixed", "nl": "Vast" }},
-            { "id": "all", "label": { "en": "All", "nl": "Allemaal" }},
-            { "id": "vertical", "label": { "en": "Vertical", "nl": "Verticaal" }},
-            { "id": "horizontal", "label": { "en": "Horizontal", "nl": "Horizontaal" }}
+            { "id": "fixed", "label": { "en": "Fixed", "nl": "Vast", "da": "Fast position" }},
+            { "id": "all", "label": { "en": "All", "nl": "Allemaal", "da": "Roter" }},
+            { "id": "vertical", "label": { "en": "Vertical", "nl": "Verticaal", "da": "Vertikal" }},
+            { "id": "horizontal", "label": { "en": "Horizontal", "nl": "Horizontaal", "da": "Horisontal" }}
           ]
         }
       ]
@@ -279,11 +311,13 @@
       "id": "set_air_conditioning_mode",
       "title": {
         "en": "Set mode to...",
-        "nl": "Zet modus op..."
+        "nl": "Zet modus op...",
+        "da": "Sæt tilstand til..."
       },
       "titleFormatted": {
         "en": "Set mode to [[air_conditioning_mode]]",
-        "nl": "Zet modus op [[air_conditioning_mode]]"
+        "nl": "Zet modus op [[air_conditioning_mode]]",
+        "da": "Sæt tilstand til [[air_conditioning_mode]]"
       },
       "args": [
         {
@@ -291,14 +325,15 @@
           "name": "air_conditioning_mode",
           "title": {
             "en": "Pick a mode",
-            "nl": "Kies een modus"
+            "nl": "Kies een modus",
+            "da": "Vælg en tilstand"
           },
           "values": [
-            { "id": "cool", "label": { "en": "Cool", "nl": "Koelen" }},
-            { "id": "dry", "label": { "en": "Dry", "nl": "Drogen" }},
-            { "id": "wind", "label": { "en": "Wind", "nl": "Wind" }},
-            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch" }},
-            { "id": "heat", "label": { "en": "Heat", "nl": "Verwarmen" }}
+            { "id": "cool", "label": { "en": "Cool", "nl": "Koelen", "da": "Kold" }},
+            { "id": "dry", "label": { "en": "Dry", "nl": "Drogen", "da": "Tør" }},
+            { "id": "wind", "label": { "en": "Wind", "nl": "Wind", "da": "Vind" }},
+            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+            { "id": "heat", "label": { "en": "Heat", "nl": "Verwarmen", "da": "Varm" }}
           ]
         }
       ]
@@ -307,11 +342,13 @@
       "id": "set_air_conditioning_fan_mode",
       "title": {
         "en": "Set fan mode to...",
-        "nl": "Zet ventilatiemodus op..."
+        "nl": "Zet ventilatiemodus op...",
+        "da": "Sæt ventilations tilstand til..."
       },
       "titleFormatted": {
         "en": "Set fan mode to [[air_conditioning_fan_mode]]",
-        "nl": "Zet ventilatiemodus op [[air_conditioning_fan_mode]]"
+        "nl": "Zet ventilatiemodus op [[air_conditioning_fan_mode]]",
+        "da": "Sæt ventilations tilstand til [[air_conditioning_fan_mode]]"
       },
       "args": [
         {
@@ -319,14 +356,15 @@
           "name": "air_conditioning_fan_mode",
           "title": {
             "en": "Pick a fan mode",
-            "nl": "Kies een ventilatiemodus"
+            "nl": "Kies een ventilatiemodus",
+            "da": "Vælg ventilations tilstand"
           },
           "values": [
-            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch" }},
-            { "id": "low", "label": { "en": "Low", "nl": "Laag" }},
-            { "id": "medium", "label": { "en": "Medium", "nl": "Gemiddeld" }},
-            { "id": "high", "label": { "en": "High", "nl": "Hoog" }},
-            { "id": "turbo", "label": { "en": "Turbo", "nl": "Turbo" }}
+            { "id": "auto", "label": { "en": "Auto", "nl": "Automatisch", "da": "Automatisk" }},
+            { "id": "low", "label": { "en": "Low", "nl": "Laag", "da": "Lav" }},
+            { "id": "medium", "label": { "en": "Medium", "nl": "Gemiddeld", "da": "Mellem" }},
+            { "id": "high", "label": { "en": "High", "nl": "Hoog", "da": "Høj" }},
+            { "id": "turbo", "label": { "en": "Turbo", "nl": "Turbo", "da": "Turbo" }}
           ]
         }
       ]
@@ -335,11 +373,13 @@
       "id": "set_air_conditioning_fan_oscillation_mode",
       "title": {
         "en": "Set fan oscillation mode to...",
-        "nl": "Zet ventilator-oscillatiemodus op..."
+        "nl": "Zet ventilator-oscillatiemodus op...",
+        "da": "Sæt Ventilations oscillation tilstand til..."
       },
       "titleFormatted": {
         "en": "Set fan oscillationmode to [[air_conditioning_fan_oscillation_mode]]",
-        "nl": "Zet ventilator-oscillatiemodus op [[air_conditioning_fan_oscillation_mode]]"
+        "nl": "Zet ventilator-oscillatiemodus op [[air_conditioning_fan_oscillation_mode]]",
+        "da": "Sæt Ventilations oscillation tilstand til [[air_conditioning_fan_oscillation_mode]]"
       },
       "args": [
         {
@@ -350,10 +390,10 @@
             "nl": "Kies een ventilatiemodus"
           },
           "values": [
-            { "id": "fixed", "label": { "en": "Fixed", "nl": "Vast" }},
-            { "id": "all", "label": { "en": "All", "nl": "Allemaal" }},
-            { "id": "vertical", "label": { "en": "Vertical", "nl": "Verticaal" }},
-            { "id": "horizontal", "label": { "en": "Horizontal", "nl": "Horizontaal" }}
+            { "id": "fixed", "label": { "en": "Fixed", "nl": "Vast", "da": "Fast position" }},
+            { "id": "all", "label": { "en": "All", "nl": "Allemaal", "da": "Roter" }},
+            { "id": "vertical", "label": { "en": "Vertical", "nl": "Verticaal", "da": "Vertikal" }},
+            { "id": "horizontal", "label": { "en": "Horizontal", "nl": "Horizontaal", "da": "Horisontal" }}
           ]
         }
       ]
